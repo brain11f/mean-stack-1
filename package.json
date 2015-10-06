@@ -1,0 +1,27 @@
+{
+  "name": "blogwithangularandmongo",
+  "version": "1.0.0",
+  "description": "A awesome blog!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brain11f/mean-stack-1.git"
+  },
+  "keywords": [
+    "code",
+    "fellows",
+    "blog",
+    "angular",
+    "mongodb"
+  ],
+  "author": "Brian Finck and Chris Holt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brain11f/mean-stack-1/issues"
+  },
+  "homepage": "https://github.com/brain11f/mean-stack-1#readme"
+}
