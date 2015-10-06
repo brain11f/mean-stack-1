@@ -7,7 +7,9 @@
 - Global styles / margins for mobile vs desktop?
 
 ### Layout
-- ??? Maybe not nece
+- Should tell sections how they sit next to each other
+- Margins / padding between sections
+- Mobile vs desktop margins / padding
 
 
 ### Components
