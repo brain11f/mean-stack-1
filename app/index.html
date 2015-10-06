@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,21 +9,22 @@
   </head>
 
   <body ng-app="app">
-  <p>Angular is working: {{1 + 1 === 2}}</p>
 
     <!-- NAV -->
-    <nav>
-      <ul>
-        <li>intelly</li>
-        <li>HOME</li>
-        <li>PAGES</li>
-        <li>BLOG</li>
-        <li>PORTFOLIO</li>
-        <li>SHORTCODES</li>
-        <li>FEATURES</li>
-        <li>CONTACT</li>
-      </ul>
-    </nav>
+    <header>
+    	<h1>intelly</h1>
+    	<nav>
+				<ul>
+					<li>HOME</li>
+					<li>PAGES</li>
+					<li>BLOG</li>
+					<li>PORTFOLIO</li>
+					<li>SHORTCODES</li>
+					<li>FEATURES</li>
+					<li>CONTACT</li>
+				</ul>
+			</nav>
+    </header>
 
     <!-- Blog Main SECTION -->
     <!-- (Call this thing a section!) -->
@@ -38,13 +38,17 @@
       <ul>
         <li>HOME</li>
         <li>BLOG</li>
-        <li>Share</li>
+			</ul>
+		</nav>
+     <div>
+			 <p>Share</p>
+      <ul>
         <li>twitter icon</li>
         <li>facebook icon</li>
         <li>google plus icon</li>
         <li>pinterest icon</li>
       </ul>
-    </nav>
+		 </div>
 
     <!-- SOME KIND OF NG-VIEW THING -->
     <!-- (for the blog posts) -->
@@ -68,7 +72,7 @@
     <!-- (links to prev / next pages) -->
     <!-- (is this a div or section? ) -->
     <!-- (maybe even a thing to append to last child?) -->
-    <div>
+    <nav>
       <ul>
         <li><a href="#">PREV</a></li>
         <li><a href="#">1</a></li>
@@ -76,7 +80,7 @@
         <li><a href="#">3</a></li>
         <li><a href="#">NEXT</a></li>
       </ul>
-    </div>
+    </nav>
 
     <!-- CONTACT SECTION  -->
     <!-- (include the text, links, address, social media) -->
@@ -112,4 +116,3 @@
     <script src="bundle.js"></script>
   </body>
 </html>
-
