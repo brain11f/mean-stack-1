@@ -1,11 +1,113 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Webpack Angular Part 1</title>
-</head>
-	<body ng-app="app">
-<p>Angular is working: {{1 + 1 === 2}}</p>
-<script src="bundle.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Webpack Angular Part 1</title>
+  </head>
+
+  <body ng-app="app">
+  <p>Angular is working: {{1 + 1 === 2}}</p>
+
+    <!-- NAV -->
+    <nav>
+      <ul>
+        <li>intelly</li>
+        <li>HOME</li>
+        <li>PAGES</li>
+        <li>BLOG</li>
+        <li>PORTFOLIO</li>
+        <li>SHORTCODES</li>
+        <li>FEATURES</li>
+        <li>CONTACT</li>
+      </ul>
+    </nav>
+
+    <!-- Blog Main SECTION -->
+    <!-- (Call this thing a section!) -->
+    <section>
+      <h1>Blog</h1>
+      <p>The secular cooling that must someday overtake our planet has already gone far indeed with our neighbour. Its physical condition is still largely a mystery, but we know now that</p>
+    </section>
+
+    <!-- MINI NAV  -->
+    <nav>
+      <ul>
+        <li>HOME</li>
+        <li>BLOG</li>
+        <li>Share</li>
+        <li>twitter icon</li>
+        <li>facebook icon</li>
+        <li>google plus icon</li>
+        <li>pinterest icon</li>
+      </ul>
+    </nav>
+
+    <!-- SOME KIND OF NG-VIEW THING -->
+    <!-- (for the blog posts) -->
+    <section>
+      <!-- each post = an article -->
+      <article>
+        <h1>Integer dictum erat et</h1>
+        <p>
+          The secular cooling that must someday overtake our planet has already gone far indeed with our neighbour. Its physical condition is still largely a mystery, but we know now that even in its equatorial region the midday temperature barely approaches that of our coldest winter. Its air is much more attenuated than ours its
+        </p>
+        <ul>
+          <li>By carlo</li>
+          <li>April 07rd, 2014</li>
+          <li>4 comments</li>
+        </ul>
+        <a href="#">READ MORE</a>
+      </article>
+    </section>
+
+    <!-- PREV 1 2 3 NEXT  -->
+    <!-- (links to prev / next pages) -->
+    <!-- (is this a div or section? ) -->
+    <!-- (maybe even a thing to append to last child?) -->
+    <div>
+      <ul>
+        <li><a href="#">PREV</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">NEXT</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT SECTION  -->
+    <!-- (include the text, links, address, social media) -->
+    <section>
+      <h1>Serene in their assurance of their empire over matter</h1>
+      <p>No one would have believed in the last years of the nine-teenth century that this world was being watched keenly and closely by intelligence grater than man's</p>
+      <a href="#">CONTACT NOW</a>
+      <a href="#">LEARN MORE</a>
+      <address>
+        2319 Hilltop Haven Drive<br>
+        Upper Greenwood Lake, NJ 07421
+      </address>
+      <a href="tel:+16624076792">662-407-6792</a>
+      <a href="mailto:contact@intell.com" target="_top">contact@intell.com</a>
+      <ul>
+        <li>twitter icon FOLLOW US</li>
+        <li>facebook icon LIKE US</li>
+        <li>linkedin icon CONNECT</li>
+      </ul>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer>
+      <ul>
+        <li>&#169; 2014 intelly LLC</li>
+        <li>TERMS OF USE</li>
+        <li>PRIVACY POLICY</li>
+        <li>CONTACT</li>
+        <li>SUPPORT</li>
+      </ul>
+    </footer>
+
+    <script src="bundle.js"></script>
+  </body>
 </html>
