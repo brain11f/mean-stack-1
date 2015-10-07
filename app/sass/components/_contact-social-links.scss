@@ -5,6 +5,7 @@
   @media screen and (min-width: 50em) {
     float: right;
     padding-right: 5em;
+    padding-bottom: 6em;
     width: 30em;
     display: inline;
     margin-top: 0;
@@ -47,10 +48,9 @@
 %border-circle {
   position: absolute;
   border: 0.1em solid color($key: 'secondary');
-
   border-radius: 50%;
   width: 8em;
-  height: 8em;
+  height: 4.5em;
   top: 0.1em;
   left: 0;
   content:"";
