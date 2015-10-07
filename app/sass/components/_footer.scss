@@ -3,6 +3,9 @@ footer {
   border-top: 0.1em solid black;
   clear: both;
   width: 100%;
+  font-family: font-family('primary', 'light');
+  font-size: font-size($key: 'x-small');
+  letter-spacing: 0.1em;
   @media screen and (min-width: 50em) {
     clear: both;
   }
@@ -19,5 +22,9 @@ footer {
   }
   a {
     text-decoration: none;
+    color: color($key: 'primary');
+    &:hover {
+      color: color($key: 'accent');
+    }
   }
 }

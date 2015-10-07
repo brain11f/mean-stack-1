@@ -23,14 +23,18 @@
   }
   a {
     position: relative;
-    &:before { // icon font style
+    // Icon styles in a:before
+    &:before {
       font-size: 1.5em;
-      color: black;
-      background-color: white;
-      border-radius: 50%; //
+      background-color: color($key: 'base');
+      border-radius: 50%; // Icon is in the <a> box
       border-color: transparent;
     }
+    &:hover {
+      color: color($key: 'accent');
+    }
   }
+  // Span for text for text styles
   span {
     @extend %border-circle;
     text-transform: uppercase;
@@ -39,10 +43,11 @@
     padding-top: 3.5em;
   }
 }
-
+// Code for the circle
 %border-circle {
   position: absolute;
-  border: 0.2em solid gray;
+  border: 0.1em solid color($key: 'secondary');
+
   border-radius: 50%;
   width: 8em;
   height: 8em;
