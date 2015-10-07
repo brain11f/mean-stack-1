@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/stylesheet.css">
     <title>Webpack Angular Part 1</title>
   </head>
 
   <body ng-app="app">
 
     <!-- NAV -->
-    <header>
+    <header class="header-container">
     	<h1 class="logo">intelly</h1>
-    	<nav>
+			<nav class="primary-nav-wrap">
 				<ul>
-					<li>HOME</li>
-					<li>PAGES</li>
-					<li>BLOG</li>
-					<li>PORTFOLIO</li>
-					<li>SHORTCODES</li>
-					<li>FEATURES</li>
-					<li>CONTACT</li>
+					<li><a href="#">Menu 1</a>
+						<ul>
+							<li><a href="#">HOME</a></li>
+							<li><a href="#">PAGES</a></li>
+							<li><a href="#">BLOG</a></li>
+							<li><a href="#">PORTFOLIO</a>
+								<ul>
+									<li><a href="#">Web Design</a></li>
+									<li><a href="#">Photography</a></li>
+									<li><a href="#">Consulting</a></li>
+									<li><a href="#">IOS Develpment</a></li>
+								</ul>
+							</li>
+							<li><a href="#">SHORTCODES</a></li>
+							<li><a href="#">FEATURES</a></li>
+							<li><a href="#">CONTACT</a></li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
     </header>
-
+   
     <!-- Blog Main SECTION -->
     <!-- (Call this thing a section!) -->
     <section class="page-banner">
