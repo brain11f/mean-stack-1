@@ -4,11 +4,13 @@
   @media screen and (min-width: 50em) {
     float: right;
     padding-right: 5em;
-    width: 30em;
+    // width: 30em;
+    display: inline;
   }
   ul {
     @include flexbox;
-    clear: both;
+    width: 25em;
+    // clear: both;
   }
   li {
     @include flexitem;
@@ -17,25 +19,32 @@
     text-align: center;
   }
   a {
-    display: block;
-  }
-
-  span {
     position: relative;
-    &:after {
-      content:"";
-      position: absolute;
-      display: inline-block;
-      left: -2em;
-      top: 0.1em;
-      border: 0.1em solid gray;
-      background: transparent;
-      border-radius: 50%;
-      width: 4.5em;
-      height: 4.5em;
-      // font-size: 1.3em;
-      z-index: -1;
+    &:before {
+      font-size: 1.5em; //icon font
     }
+    &:after {}
+  }
+  span {
+    text-transform: uppercase;
+  font-size: 0.5em;
+  text-align: center;
+  padding-top: 2.5em;
+
   }
 }
+.border-circle {
+
+  position: absolute;
+  border: 0.2em solid gray;
+  border-radius: 50%;
+  width: 7em;
+  height: 7em;
+  top: 5px;
+  left: 0px;
+  content:"";
+  z-index: -1;
+}
+
+
 
