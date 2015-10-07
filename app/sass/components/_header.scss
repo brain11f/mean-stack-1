@@ -1,0 +1,11 @@
+@import "header/header-logo";
+@import "header/header-nav";
+
+.header-container {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: flex-start;
+	align-items: center;
+}
