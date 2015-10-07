@@ -1,5 +1,4 @@
 //colors
-$color_mine_shaft_approx: #333;
 $color_alto_approx: #ddd;
 $color_black_haze_approx: #f6f6f6;
 $white: #fff;
@@ -19,7 +18,6 @@ $font_4: sans-serif;
 		padding: 0;
 		a {
 			display: block;
-			color: $color_mine_shaft_approx;
 			text-decoration: none;
 			font-weight: 700;
 			font-size: 12px;
@@ -44,7 +42,6 @@ $font_4: sans-serif;
 			display: none;
 			top: 100%;
 			left: 0;
-			background: $white;
 			padding: 0;
 			li {
 				float: none;
