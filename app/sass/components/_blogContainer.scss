@@ -1,0 +1,6 @@
+.blog-container {
+  padding: 0 10%;
+  @media only screen and (min-width) {
+    padding: 0 20%;
+  }
+}
