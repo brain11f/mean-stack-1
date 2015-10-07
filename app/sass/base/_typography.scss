@@ -11,51 +11,56 @@
 
 // Ubuntu Light
 @font-face {
-  font-family: 'Ubuntu-L';
-  src: url('/../../fonts/Ubuntu-L.ttf');
-  font-weight: 300;
+  font-family: 'Ubuntu-Light';
+  src:url('/../../fonts/Ubuntu-L.ttf');
+  font-weight: normal;
 }
 
 //Ubuntu Light Italic
 @font-face {
-  font-family: 'Ubuntu-LI';
-  src: url('/../../fonts/Ubuntu-LI.ttf');
-  font-weight: 300;
-  font-style: italic;
+  font-family: 'Ubuntu-Light-Italic';
+  src:url('/../../fonts/Ubuntu-LI.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 
 // Ubuntu Regular
 @font-face {
-  font-family: 'Ubuntu-R';
-  src: url('/../../fonts/Ubuntu-R.ttf');
-  font-weight: 400;
+  font-family: 'Ubuntu-Regular';
+  src:url('/../../fonts/Ubuntu-R.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 // Ubuntu Medium
 @font-face {
-  font-family: 'Ubuntu-M';
-  src: url('/../../fonts/Ubuntu-M.ttf');
-  font-weight: 500;
+  font-family: 'Ubuntu-Medium';
+  src:url('/../../fonts/Ubuntu-M.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 //Ubuntu Bold
 @font-face {
-  font-family: 'Ubuntu-B';
-  src: url('/../../fonts/Ubuntu-B.ttf');
-  font-weight: 700;
+  font-family: 'Ubuntu-Bold';
+  src:url('/../../fonts/Ubuntu-B.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 //RobotoSlab Light
 @font-face {
   font-family: 'RobotoSlab-Light';
-  src: url('/../../fonts/RobotoSlab-Light.ttf');
-  font-weight: 300;
+  src:url('/../../fonts/RobotoSlab-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 //RobotoSlab Regular
 @font-face {
   font-family: 'RobotoSlab-Regular';
-  src: url('/../../fonts/RobotoSlab-Regular.ttf');
-  font-weight: 400;
+  src:url('/../../fonts/RobotoSlab-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
 }

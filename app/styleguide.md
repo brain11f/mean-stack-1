@@ -51,10 +51,10 @@
 
 ## Colors
 
-'base': #fff,
-'primary': #1e1d24,
-'secondary': #b4b3b5,
-'accent': #97f1e7,
+'base': #fff, // white
+'primary': #1e1d24, // thunderstorm grey
+'secondary': #b4b3b5, // light grey
+'accent': #97f1e7, // seafoam green
 
 
 ICON FONT DETAILS:

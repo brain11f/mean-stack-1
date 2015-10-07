@@ -1,0 +1,33 @@
+.blog-summary {
+  position: relative;
+
+  h1 {
+    font-family: font-family('primary', 'regular');
+    font-size: font-size('mega-medium');
+  }
+
+  p {
+    font-family: font-family('primary', 'light');
+    font-size: font-size('xx-large');
+    color: color('secondary');
+    opacity: .7;
+  }
+
+  .blog-metadata {
+    display: inline-block;
+    width: 50%;
+
+    li {
+      font-family: font-family('primary', 'light-italic');
+      font-size: font-size('large');
+      color: color('secondary');
+      display: inline-flex;
+      padding: 0 1em 0 0;
+    }
+  }
+
+  .btn-primary {
+    position: absolute;
+    right: 0;
+  }
+}
