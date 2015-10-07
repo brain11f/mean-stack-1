@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
 */
@@ -17,6 +17,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	display: block; }
 
 body {
+  width: 100%;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 	line-height: 1; }
 
 ol, ul {
@@ -28,13 +32,20 @@ blockquote, q {
 blockquote {
 	&:before, &:after {
 		content: '';
-		content: none; } }
+		content: none; }
+  }
 
 q {
 	&:before, &:after {
 		content: '';
-		content: none; } }
+		content: none; }
+  }
+
+li, a {
+  text-decoration: none;
+}
 
 table {
 	border-collapse: collapse;
-	border-spacing: 0; }
+	border-spacing: 0;
+}

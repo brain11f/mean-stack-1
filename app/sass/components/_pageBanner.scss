@@ -1,0 +1,20 @@
+@mixin banner($background, $heading-family, $text-family, $heading-size, $text-size) {
+  background-color: color($background);
+
+  h1 {
+    font-family: $heading-family;
+    font-size: font-size($heading-size);
+    margin: 1em 0 0 0;
+  }
+
+  p {
+    font-family: $text-family;
+    font-size:  font-size($text-size);
+    margin: .5em 0 1em 0;
+  }
+}
+
+.page-banner {
+  @include banner('accent', font-family('secondary', 'regular'), font-family('secondary', 'light'), 'mega-large', 'mega-small');
+  padding: 2% 35% 2% 10%;
+}

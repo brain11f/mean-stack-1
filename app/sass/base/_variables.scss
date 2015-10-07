@@ -10,12 +10,12 @@ $colors: (
   'accent': #97f1e7,
 );
 
-//Pixels to Em Function
-$browser-context: 24; // Default Browser Pixel Size
+
+$browser-context: 24; // Default
+
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em;
 }
-
 //text size maps
 $font-size: (
   'x-small': em(22),
