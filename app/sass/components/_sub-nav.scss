@@ -1,0 +1,13 @@
+// mini nav section
+.sub-nav {
+  text-align: center;
+  li {
+    display: inline;
+  }
+  li:last-child:before {
+    content:'\00B7';
+    padding-right:5px;
+  }
+}
+
+

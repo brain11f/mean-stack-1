@@ -1,0 +1,17 @@
+// share social icons
+.share-social-icons {
+  text-align: center;
+  //On media call do this:
+  // float: right;
+  p {
+    display: inline;
+  }
+  ul {
+    display: inline;
+    padding-left: 0;
+  }
+  li { // icons
+    display: inline;
+    padding-left: 0.5em;
+  }
+}
