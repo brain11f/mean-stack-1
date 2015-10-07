@@ -27,16 +27,35 @@
 
 
 ### Typography
-- Icons
-- Fonts
+**Icons**
+
+**Font Families**
+
+- Logo // 'primary', 'medium' // mega-small
+- Main Nav // 'primary', 'regular' // small
+- Submenu // 'primary', 'light' // small
+- Breadcrumbs // 'primary', 'bold' // small
+- Share // 'primary', 'medium' // small
+- Blog Hero // RobotoSlab Regular // mega-large
+- Blog Hero Summary // RobotoSlab Light // mega-small
+- Blog Summary Heading // 'primary', 'regular' // mega-medium
+- Blog summary text // 'primary', 'light' // xx-large
+- Blog Summary meta // 'primary', 'light-italic' // large
+- Blog Read More // 'primary', 'medium' // small
+- Contact Heading // 'primary', 'medium' // mega-medium
+- Contact text // 'primary', 'regular' // large
+- Contact Buttons // 'primary', 'medium' // medium
+- Address, Phone, Contact // 'primary', 'regular' // x-large
+- Follow Us // 'primary', 'bold' // small
+- Footer // 'primary', 'regular' // x-small
+
+## Colors
+
+'base': #fff, // white
+'primary': #1e1d24, // thunderstorm grey
+'secondary': #b4b3b5, // light grey
+'accent': #97f1e7, // seafoam green
 
 
-### Colors
-- Background
-  - (black, mint, white / nav, sections, footer)
-- Text
-- Links
-  - (background, text, hover)
-
-
+ICON FONT DETAILS:
 

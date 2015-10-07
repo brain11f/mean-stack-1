@@ -17,7 +17,7 @@
 		"angular",
 		"mongodb"
 	],
-	"author": "Brian Finck and Chris Holt",
+	"author": "Brian Finck and Chris Holt and Alina To",
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/brain11f/mean-stack-1/issues"
