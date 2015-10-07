@@ -1,0 +1,13 @@
+footer {
+  text-align: center;
+  border-top: 0.1em solid black;
+  li {
+    list-style-type: none;
+    // On media call do this:
+    // display: inline;
+    // padding: 0.5em;
+  }
+  a {
+    text-decoration: none;
+  }
+}
