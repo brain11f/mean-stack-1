@@ -1,14 +1,26 @@
 .contact-info-wrapper {
   text-align: center;
-  address {
+  padding: 1em;
 
-  }
-
-}
-
-.contact-info-social-wrapper {
-  text-align: center;
-  li {
-    list-style-type: none;
+  @media screen and (min-width: 50em) {
+    padding: 2em;
+    width: 50em;
+    display: inline;
   }
 }
+
+.address-wrapper {
+  padding-bottom: 1em;
+  @media screen and (min-width: 50em) {
+    float: left;
+    padding-left: 5em;
+  }
+}
+
+.phone-email-wrapper {
+  @media screen and (min-width: 50em) {
+    float: left;
+    padding-left: 5em;
+  }
+}
+

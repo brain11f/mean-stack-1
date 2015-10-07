@@ -23,3 +23,6 @@ app.listen(app.get('port'), function(){
   console.log('Server listening at port ' + port);
 });
 
+// set up paths
+// .com/blog == show all the blog posts
+// .com/blog/post/1 === show an individual blog post
