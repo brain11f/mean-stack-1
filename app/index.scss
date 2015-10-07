@@ -6,4 +6,8 @@
 @import "sass/layout/layout";
 
 
-
+.logo {
+  font-family: "Arial";
+  font-size: font-size('medium');
+  color: color('primary');
+}

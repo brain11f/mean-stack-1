@@ -33,31 +33,37 @@
   - Ubuntu (medium)
   -
 
-//Logo - Ubuntu Medium
-//Main Nav - Ubuntu (all caps)
-//Submenu - Ubuntu Light (Capitalized)
-//Breadcrumbs - Ubuntu Bold (All Caps)
-//Share - Ubuntu Medium
-//Blog Hero - RobotoSlab Regular
-//Blog Hero Summary - RobotoSlab Light
-//Blog Summary Heading - Ubuntu
-//Blog summary text - Ubuntu Light
-//Blog Summary meta - Ubuntu Light Italic
-//Blog Read More - Ubuntu Medium
-//Contact Heading - Ubuntu Medium
-//Contact text - Ubuntu
-//Contact Buttons - Ubuntu Medium
-//Address, Phone, Contact - Ubuntu
-//Follow Us - Ubuntu Bold
-//Footer - Ubuntu
+//Logo - Ubuntu Medium // 56pt
+//Main Nav - Ubuntu (all caps) // 24pt
+//Submenu - Ubuntu Light (Capitalized) // 24pt
+//Breadcrumbs - Ubuntu Bold (All Caps) // 24pt
+//Share - Ubuntu Medium // 24pt
+//Blog Hero - RobotoSlab Regular // 80pt
+//Blog Hero Summary - RobotoSlab Light // 56pt
+//Blog Summary Heading - Ubuntu // 72pt
+//Blog summary text - Ubuntu Light // 42pt
+//Blog Summary meta - Ubuntu Light Italic // 32pt
+//Blog Read More - Ubuntu Medium // 24pt
+//Contact Heading - Ubuntu Medium //72pt
+//Contact text - Ubuntu // 32pt
+//Contact Buttons - Ubuntu Medium // 28pt
+//Address, Phone, Contact - Ubuntu //36pt
+//Follow Us - Ubuntu Bold // 24pt
+//Footer - Ubuntu // 22pt
 
 **Font Sizes**
 
 Base:
 
-$font-small: 22pt
-$font-regular: 24pt
-$font-large:
+$font-small: 22px
+$font-regular: 24px
+$font-medium: 28px
+$font-large: 32px
+$font-xlarge: 36px
+$font-mega-small: 42px
+$font-mega-medium: 56px
+$font-mega-large: 72px
+$font-mega-super: 80px
 
 **Font Weights**
 
@@ -69,7 +75,7 @@ $font-weight-m:
 
 **Theme Colors**
 
-$theme-colors: (
+$base-colors: (
   BASE: #fff // WHITE
   PRIMARY: #1e1d24 // DARK GREY-LIGHT BLACK?
   ACCENT: #97f1e7 // SEA GREEN/BLUE?
