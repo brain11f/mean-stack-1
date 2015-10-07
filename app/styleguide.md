@@ -30,69 +30,31 @@
 **Icons**
 
 **Font Families**
-  - Ubuntu (medium)
-  -
 
-//Logo - Ubuntu Medium
-//Main Nav - Ubuntu (all caps)
-//Submenu - Ubuntu Light (Capitalized)
-//Breadcrumbs - Ubuntu Bold (All Caps)
-//Share - Ubuntu Medium
-//Blog Hero - RobotoSlab Regular
-//Blog Hero Summary - RobotoSlab Light
-//Blog Summary Heading - Ubuntu
-//Blog summary text - Ubuntu Light
-//Blog Summary meta - Ubuntu Light Italic
-//Blog Read More - Ubuntu Medium
-//Contact Heading - Ubuntu Medium
-//Contact text - Ubuntu
-//Contact Buttons - Ubuntu Medium
-//Address, Phone, Contact - Ubuntu
-//Follow Us - Ubuntu Bold
-//Footer - Ubuntu
+- Logo // 'primary', 'medium' // mega-small
+- Main Nav // 'primary', 'regular' // small
+- Submenu // 'primary', 'light' // small
+- Breadcrumbs // 'primary', 'bold' // small
+- Share // 'primary', 'medium' // small
+- Blog Hero // RobotoSlab Regular // mega-large
+- Blog Hero Summary // RobotoSlab Light // mega-small
+- Blog Summary Heading // 'primary', 'regular' // mega-medium
+- Blog summary text // 'primary', 'light' // xx-large
+- Blog Summary meta // 'primary', 'light-italic' // large
+- Blog Read More // 'primary', 'medium' // small
+- Contact Heading // 'primary', 'medium' // mega-medium
+- Contact text // 'primary', 'regular' // large
+- Contact Buttons // 'primary', 'medium' // medium
+- Address, Phone, Contact // 'primary', 'regular' // x-large
+- Follow Us // 'primary', 'bold' // small
+- Footer // 'primary', 'regular' // x-small
 
-**Font Sizes**
+## Colors
 
-Base:
-
-$font-small: 22pt
-$font-regular: 24pt
-$font-large:
-
-**Font Weights**
-
-$font-weight-l:
-$font-weight-r:
-$font-weight-m:
-
-### Colors
-
-**Theme Colors**
-
-$theme-colors: (
-  BASE: #fff // WHITE
-  PRIMARY: #1e1d24 // DARK GREY-LIGHT BLACK?
-  ACCENT: #97f1e7 // SEA GREEN/BLUE?
-);
-
-**Text Colors**
-
-$text-colors: (
-  BASE: #fff // WHITE - Navigation
-  PRIMARY: #1e1d24 // BLACK/GREY
-  SECONDARY: #b4b3b5 // LIGHT GREY TEXT
-  ACCENT: #a5a5a7 // Dark Grey Meta Blog Items, Share
-);
-
-$horizontal-rule: (
-  PRIMARY: #1c1e26 Opacity @ 10%
-)
-
-- Background
-  - (black, mint, white / nav, sections, footer)
-- Text
-- Links
-  - (background, text, hover)
+'base': #fff, // white
+'primary': #1e1d24, // thunderstorm grey
+'secondary': #b4b3b5, // light grey
+'accent': #97f1e7, // seafoam green
 
 
 ICON FONT DETAILS:
