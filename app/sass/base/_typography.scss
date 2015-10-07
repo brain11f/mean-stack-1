@@ -8,3 +8,54 @@
   font-weight: normal;
   font-style: normal;
 }
+
+// Ubuntu Light
+@font-face {
+  font-family: 'Ubuntu-L';
+  src: url('/../../fonts/Ubuntu-L.ttf');
+  font-weight: 300;
+}
+
+//Ubuntu Light Italic
+@font-face {
+  font-family: 'Ubuntu-LI';
+  src: url('/../../fonts/Ubuntu-LI.ttf');
+  font-weight: 300;
+  font-style: italic;
+}
+
+
+// Ubuntu Regular
+@font-face {
+  font-family: 'Ubuntu-R';
+  src: url('/../../fonts/Ubuntu-R.ttf');
+  font-weight: 400;
+}
+
+// Ubuntu Medium
+@font-face {
+  font-family: 'Ubuntu-M';
+  src: url('/../../fonts/Ubuntu-M.ttf');
+  font-weight: 500;
+}
+
+//Ubuntu Bold
+@font-face {
+  font-family: 'Ubuntu-B';
+  src: url('/../../fonts/Ubuntu-B.ttf');
+  font-weight: 700;
+}
+
+//RobotoSlab Light
+@font-face {
+  font-family: 'RobotoSlab-Light';
+  src: url('/../../fonts/RobotoSlab-Light.ttf');
+  font-weight: 300;
+}
+
+//RobotoSlab Regular
+@font-face {
+  font-family: 'RobotoSlab-Regular';
+  src: url('/../../fonts/RobotoSlab-Regular.ttf');
+  font-weight: 400;
+}

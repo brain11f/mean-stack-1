@@ -1,9 +1,3 @@
-//Pixels to Em Function
-
-$browser-context: 16; // Default Browser Pixel Size
-@function em($pixels, $context: $browser-context) {
-  @return #{$pixels/$context}em;
-}
 
 // Map-Get Function for Colors
 
@@ -14,4 +8,9 @@ $browser-context: 16; // Default Browser Pixel Size
 //Map-Get Function for font-size:
 @function font-size($key: 'x-small') {
   @return map-get($font-size, $key);
+}
+
+//Map-Get Function for Font-Family
+@function font-family($font-name, $font-variant) {
+  @return map-get(map-get($font-family, $font-name), $font-variant);
 }

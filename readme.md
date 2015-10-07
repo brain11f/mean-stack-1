@@ -47,3 +47,4 @@ In this assignment, you should be able to demonstrate mastery over the basics of
 ## Resources Used
 
 1. Function from Web Design Weekly article on converting Px to Em. Wanted to limit excess dependencies when not needed, so avoided adding Bourbon and others (http://web-design-weekly.com/snippets/converts-pixels-to-ems-with-sass/)
+1. Font Family Function inspired by map-get article for map-get inception for colors by Jake Albaugh (http://codepen.io/jakealbaugh/post/using-sass-functions-to-access-complex-variable-maps)

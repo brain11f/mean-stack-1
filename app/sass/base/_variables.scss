@@ -7,15 +7,13 @@ $colors: (
   'accent': #97f1e7,
 );
 
-
-//text size maps
-
 //Pixels to Em Function
 $browser-context: 16; // Default Browser Pixel Size
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em;
 }
 
+//text size maps
 $font-size: (
   'x-small': em(22),
   'small': em(24),
@@ -26,4 +24,20 @@ $font-size: (
   'mega-small': em(56),
   'mega-medium': em(72),
   'mega-large': em(80),
+);
+
+
+//font family map
+$font-family: (
+  'primary': (
+    'light': 'Ubuntu-L',
+    'light-italic': 'Ubuntu-LI',
+    'regular': 'Ubuntu-R',
+    'medium': 'Ubuntu-M',
+    'bold': 'Ubuntu-B'
+  ),
+  'secondary': (
+    'light': 'RobotoSlab-Light',
+    'regular': 'RobotoSlab-Regular'
+  ),
 );

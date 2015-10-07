@@ -30,75 +30,31 @@
 **Icons**
 
 **Font Families**
-  - Ubuntu (medium)
-  -
 
-//Logo - Ubuntu Medium // 56pt
-//Main Nav - Ubuntu (all caps) // 24pt
-//Submenu - Ubuntu Light (Capitalized) // 24pt
-//Breadcrumbs - Ubuntu Bold (All Caps) // 24pt
-//Share - Ubuntu Medium // 24pt
-//Blog Hero - RobotoSlab Regular // 80pt
-//Blog Hero Summary - RobotoSlab Light // 56pt
-//Blog Summary Heading - Ubuntu // 72pt
-//Blog summary text - Ubuntu Light // 42pt
-//Blog Summary meta - Ubuntu Light Italic // 32pt
-//Blog Read More - Ubuntu Medium // 24pt
-//Contact Heading - Ubuntu Medium //72pt
-//Contact text - Ubuntu // 32pt
-//Contact Buttons - Ubuntu Medium // 28pt
-//Address, Phone, Contact - Ubuntu //36pt
-//Follow Us - Ubuntu Bold // 24pt
-//Footer - Ubuntu // 22pt
+- Logo // 'primary', 'medium' // mega-small
+- Main Nav // 'primary', 'regular' // small
+- Submenu // 'primary', 'light' // small
+- Breadcrumbs // 'primary', 'bold' // small
+- Share // 'primary', 'medium' // small
+- Blog Hero // RobotoSlab Regular // mega-large
+- Blog Hero Summary // RobotoSlab Light // mega-small
+- Blog Summary Heading // 'primary', 'regular' // mega-medium
+- Blog summary text // 'primary', 'light' // xx-large
+- Blog Summary meta // 'primary', 'light-italic' // large
+- Blog Read More // 'primary', 'medium' // small
+- Contact Heading // 'primary', 'medium' // mega-medium
+- Contact text // 'primary', 'regular' // large
+- Contact Buttons // 'primary', 'medium' // medium
+- Address, Phone, Contact // 'primary', 'regular' // x-large
+- Follow Us // 'primary', 'bold' // small
+- Footer // 'primary', 'regular' // x-small
 
-**Font Sizes**
+## Colors
 
-Base:
-
-$font-small: 22px
-$font-regular: 24px
-$font-medium: 28px
-$font-large: 32px
-$font-xlarge: 36px
-$font-mega-small: 42px
-$font-mega-medium: 56px
-$font-mega-large: 72px
-$font-mega-super: 80px
-
-**Font Weights**
-
-$font-weight-l:
-$font-weight-r:
-$font-weight-m:
-
-### Colors
-
-**Theme Colors**
-
-$base-colors: (
-  BASE: #fff // WHITE
-  PRIMARY: #1e1d24 // DARK GREY-LIGHT BLACK?
-  ACCENT: #97f1e7 // SEA GREEN/BLUE?
-);
-
-**Text Colors**
-
-$text-colors: (
-  BASE: #fff // WHITE - Navigation
-  PRIMARY: #1e1d24 // BLACK/GREY
-  SECONDARY: #b4b3b5 // LIGHT GREY TEXT
-  ACCENT: #a5a5a7 // Dark Grey Meta Blog Items, Share
-);
-
-$horizontal-rule: (
-  PRIMARY: #1c1e26 Opacity @ 10%
-)
-
-- Background
-  - (black, mint, white / nav, sections, footer)
-- Text
-- Links
-  - (background, text, hover)
+'base': #fff,
+'primary': #1e1d24,
+'secondary': #b4b3b5,
+'accent': #97f1e7,
 
 
 ICON FONT DETAILS:
