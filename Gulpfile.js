@@ -4,22 +4,39 @@ var gulp = require('gulp'),
 		browserify = require('gulp-browserify'),
 		uglify = require('gulp-uglify');
 
-var jsPaths = {
-	js: './src/*.js'
+///////all the js to one min file///////////////////
+
+var jsNodeModules = {
+	js: './node_modules/**/*.js'
 };
 
-gulp.task('browserify', function () {
-	return gulp.src([jsPaths.js])
-   .pipe(browserify())
-   .pipe(uglify())
-   .pipe(gulp.dest('./app'));
+gulp.task('modules', function () {
+	return gulp.src([jsNodeModules.js])
+		.pipe(browserify())
+		.pipe(uglify())
+		.pipe(gulp.dest('./app/js'));
+	console.log('modules');
 });
 
-var csspaths = {
-	scss: './app/*.scss'
+var jsPaths = {
+	js: './app/**/*.js'
 };
 
-gulp.task('run', function () {
+gulp.task('js', function () {
+	return gulp.src([jsNodeModules.js, jsPaths.js])
+   .pipe(browserify())
+   .pipe(uglify())
+   .pipe(gulp.dest('./app/js'));
+	console.log('js');
+});
+
+//all the sass to css//////////////////////////////////
+
+var csspaths = {
+	scss: './app/**/*.scss'
+};
+
+gulp.task('sass', function () {
 	return gulp.src(csspaths.scss)
 		.pipe(sass({
 		includePaths: [['run'].concat(neat), 
@@ -28,8 +45,17 @@ gulp.task('run', function () {
 									]
 	}))
 		.pipe(gulp.dest('./app/css'));
+		console.log('css');
 });
 
-gulp.task('default',function(){
-	gulp.start('run');
+gulp.task('run',function(){
+	gulp.start('sass');
+	gulp.start('modules');
+	gulp.start('js');
+});
+
+gulp.task("watch", function() {
+	gulp.watch("./app/sass/*.scss", ["sass"]);
+	gulp.watch("./app/*.js", ["js"]);
+	gulp.watch("./node_modules/*.js", ["modules"]);
 });
