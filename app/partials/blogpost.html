@@ -1,6 +1,6 @@
 <section ng-repeat="blogpost in vm.blogposts" class="blog-container">
 	<h1>List of Blogposts!</h1>
-	<article class="blog-summary">
+	<article ng-repeat="blogpost in vm.blogposts" class="blog-summary">
 		<h1>{{ blogpost.title }}</h1>
 		<p>
 			{{ blogpost.text }}

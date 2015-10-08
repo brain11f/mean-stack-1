@@ -1,3 +1,6 @@
+// require('angular');
+// require('angular-route');
+
 (function() {
 
 	'use strict';
@@ -7,7 +10,7 @@
 	app.config(["$routeProvider", function ($routeProvider) {
 		$routeProvider.when("/blogposts", {
 			templateUrl: "/partials/blogpost.html",
-			controller: "BlogpostCtrl as vm",
+			controller: "BlogpostsCtrl as vm",
 		})
 		.when("/blogposts/new", {
 			templateUrl: "/partials/form.html",
@@ -19,7 +22,7 @@
 		})
 		.when("/blogposts/:blogpost_id", {
 			templateUrl: "/partials/blog.html",
-			controller: "BlogCtrl as vm",
+			controller: "BlogpostCtrl as vm",
 		})
 		.otherwise({
 			redirectTo: "/blogposts",
@@ -27,3 +30,9 @@
 	}]);
 
 }());
+
+// require('./scripts/blog.service');
+// require('./scripts/blog.ctrl');
+// require('./blog_form.ctrl');
+// require('')
+
