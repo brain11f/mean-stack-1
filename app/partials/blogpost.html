@@ -1,15 +1,17 @@
-<section class="blog-container">
-	<!-- each post = an article -->
+<section ng-repeat="blogpost in vm.blogposts" class="blog-container">
+	<h1>List of Blogposts!</h1>
 	<article class="blog-summary">
-		<h1>Integer dictum erat et</h1>
+		<h1>{{ blogpost.title }}</h1>
 		<p>
-			The secular cooling that must someday overtake our planet has already gone far indeed with our neighbour. Its physical condition is still largely a mystery, but we know now that even in its equatorial region the midday temperature barely approaches that of our coldest winter. Its air is much more attenuated than ours its
+			{{ blogpost.text }}
 		</p>
 		<ul class="blog-metadata">
-			<li>By carlo</li>
-			<li>April 07rd, 2014</li>
+			<li>{{ blogpost.author }}</li>
+			<li>{{ blogpost.date }}</li>
 			<li>4 comments</li>
 		</ul>
-		<a class="btn-primary" href="#">Read More</a>
+		<a class="btn-primary" href="#/blogposts/{{ blogpost._id }}">Read More</a>
+
+		(<button ng-click="vm.delete(blogpost)">Delete</button>)
 	</article>
 </section>
