@@ -2,8 +2,7 @@ var gulp = require('gulp'),
 		sass = require('gulp-sass'),
 		neat = require('node-neat'),
 		browserify = require('gulp-browserify'),
-		uglify = require('gulp-uglify'),
-		vinylPaths = require('vinyl-paths');
+		uglify = require('gulp-uglify');
 
 ///////all the js to one min file///////////////////
 
