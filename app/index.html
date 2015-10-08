@@ -64,14 +64,12 @@
 
     <!-- SOME KIND OF NG-VIEW THING -->
     <!-- (for the blog posts) -->
-		<div nginclude="blogpost.html" ng-controller="Blog-postController">
-    	
-    </div>
+		<!-- <div nginclude="blogpost.html" ng-controller="Blog-postController"></div> -->
+
+    <main ng-view></main>
 
     <!-- PREV 1 2 3 NEXT  -->
     <!-- (links to prev / next pages) -->
-    <!-- (is this a div or section? ) -->
-    <!-- (maybe even a thing to append to last child?) -->
     <nav>
       <ul>
         <li><a href="#">PREV</a></li>
