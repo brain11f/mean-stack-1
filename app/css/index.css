@@ -238,15 +238,42 @@ table {
     margin: 0.5em 0 1em 0; }
 
 .sub-nav {
-  text-align: center; }
+  font-size: 0.91667em;
+  font-family: "Ubuntu-Light" sans-serif;
+  text-align: center;
+  padding: 0.5em; }
+  @media screen and (min-width: 50em) {
+    .sub-nav {
+      float: left;
+      padding-left: 5em; } }
   .sub-nav li {
     display: inline; }
   .sub-nav li:last-child:before {
     content: '\00B7';
     padding-right: 5px; }
+  .sub-nav a {
+    text-decoration: none;
+    color: #1e1d24; }
+    .sub-nav a:hover {
+      color: #97f1e7; }
+
+.sub-nav-wrapper {
+  padding: 0.5em;
+  border-bottom: 0.1em solid black; }
+  @media screen and (min-width: 50em) {
+    .sub-nav-wrapper {
+      padding-left: 5em;
+      height: 2.5em; } }
 
 .share-social-icons {
-  text-align: center; }
+  font-size: 0.91667em;
+  font-family: "Ubuntu-Light" sans-serif;
+  text-align: center;
+  padding: 0.5em; }
+  @media screen and (min-width: 50em) {
+    .share-social-icons {
+      float: right;
+      padding-right: 5em; } }
   .share-social-icons p {
     display: inline; }
   .share-social-icons ul {
@@ -255,6 +282,11 @@ table {
   .share-social-icons li {
     display: inline;
     padding-left: 0.5em; }
+  .share-social-icons a {
+    text-decoration: none;
+    color: #1e1d24; }
+    .share-social-icons a:hover {
+      color: #97f1e7; }
 
 .blog-container {
   padding: 0 10%; }
@@ -418,7 +450,19 @@ table {
 
 .learn-more-wrapper {
   text-align: center;
-  padding: 1em; }
+  padding: 1em;
+  background: #97f1e7;
+  color: #fff; }
+  .learn-more-wrapper h1 {
+    font-family: "Ubuntu-Regular" sans-serif;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    padding-top: 1em; }
+  .learn-more-wrapper p {
+    font-family: "Ubuntu-Regular" sans-serif;
+    font-size: 1em;
+    padding-bottom: 1em;
+    line-height: 1.5em; }
   @media screen and (min-width: 50em) {
     .learn-more-wrapper {
       padding: 2em 10em; } }
@@ -446,4 +490,20 @@ footer {
     text-decoration: none;
     color: #1e1d24; }
     footer a:hover {
+      color: #97f1e7; }
+
+.page-guide {
+  text-align: center;
+  font-size: 0.91667em;
+  font-family: "Ubuntu-Light" sans-serif;
+  text-transform: uppercase;
+  clear: both; }
+  .page-guide ul {
+    margin: 0 auto; }
+  .page-guide li {
+    display: inline-block; }
+  .page-guide a {
+    text-decoration: none;
+    color: #1e1d24; }
+    .page-guide a:hover {
       color: #97f1e7; }

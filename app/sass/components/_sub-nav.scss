@@ -1,12 +1,36 @@
 // mini nav section
 .sub-nav {
+  font-size: font-size($key: 'x-small');
+  font-family: font-family('primary', 'light');
   text-align: center;
+  padding: 0.5em;
+  @media screen and (min-width: 50em) {
+    float: left;
+    padding-left: 5em;
+  }
   li {
     display: inline;
   }
   li:last-child:before {
     content:'\00B7';
     padding-right:5px;
+  }
+  a {
+    text-decoration: none;
+    color: color($key: 'primary');
+    &:hover {
+      color: color($key: 'accent');
+    }
+  }
+}
+
+.sub-nav-wrapper {
+  padding: 0.5em;
+  border-bottom: 0.1em solid black;
+  // border-color: color($key: 'primary')
+  @media screen and (min-width: 50em) {
+    padding-left: 5em;
+    height: 2.5em;
   }
 }
 

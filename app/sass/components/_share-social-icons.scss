@@ -1,8 +1,15 @@
 // share social icons
 .share-social-icons {
+  font-size: font-size($key: 'x-small');
+  font-family: font-family('primary', 'light');
   text-align: center;
+  padding: 0.5em;
   //On media call do this:
-  // float: right;
+  @media screen and (min-width: 50em) {
+    float: right;
+    padding-right: 5em;
+  }
+
   p {
     display: inline;
   }
@@ -13,5 +20,12 @@
   li { // icons
     display: inline;
     padding-left: 0.5em;
+  }
+  a {
+    text-decoration: none;
+    color: color($key: 'primary');
+    &:hover {
+      color: color($key: 'accent');
+    }
   }
 }

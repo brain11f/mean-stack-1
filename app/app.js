@@ -1,3 +1,6 @@
+require('angular');
+require('angular-route');
+
 (function() {
 
 	'use strict';
@@ -27,3 +30,9 @@
 	}]);
 
 }());
+
+// require('./scripts/blog.service');
+// require('./scripts/blog.ctrl');
+// require('./blog_form.ctrl');
+// require('')
+

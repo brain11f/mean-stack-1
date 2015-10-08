@@ -9,12 +9,16 @@ var paths = {
 gulp.task('run', function () {
 	return gulp.src(paths.scss)
 		.pipe(sass({
-		includePaths: [['run'].concat(neat), 
+		includePaths: [['run'].concat(neat),
 									 require('node-bourbon').includePaths,
 									 require('node-neat').includePaths
 									]
 	}))
 		.pipe(gulp.dest('./app/css'));
+});
+
+gulp.task("watch", ["sass"], function() {
+  gulp.watch("app/sass/**/*.scss", ["sass"]);
 });
 
 gulp.task('default',function(){
