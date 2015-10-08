@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/brain11f/mean-stack-1#readme",
   "devDependencies": {
+    "angular-route": "^1.4.7",
     "angular-ui-bootstrap": "^0.13.4",
     "autoprefixer-loader": "^3.1.0",
     "bootstrap": "^3.3.5",
