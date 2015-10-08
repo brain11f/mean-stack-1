@@ -1,0 +1,17 @@
+<section class="blog-container">
+  <h1>Single Blogpost!</h1>
+  <article class="blog-summary">
+    <h1>{{ blogpost.title }}</h1>
+    <p>
+      {{ blogpost.text }}
+    </p>
+    <ul class="blog-metadata">
+      <li>{{ blogpost.author }}</li>
+      <li>{{ blogpost.date }}</li>
+      <li>4 comments</li>
+    </ul>
+    <a class="btn-primary" href="#/blogposts/{{ blogpost._id }}">Read More</a>
+
+    (<button ng-click="vm.delete(blogpost)">Delete</button>)
+  </article>
+</section>
