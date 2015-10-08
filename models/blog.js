@@ -2,14 +2,14 @@
 
 // Load required packages
 var mongoose = require("mongoose");
+var Schema = mongoose.Schema;
 
 // Define our teams schema
-var BlogpostSchema = new mongoose.Schema({
+var BlogpostSchema = new Schema({
   title: String,
-  blog: String,
+  text: String,
   author: String,
-  date: Number,
-  comments: String,
+  date: String
 });
 
 // Export the Mongoose model
