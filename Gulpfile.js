@@ -9,8 +9,10 @@ var paths = {
 gulp.task('styles', function () {
 	return gulp.src(paths.scss)
 		.pipe(sass({
-		includePaths: ['styles'].concat(neat),
-		includePaths: require('node-bourbon').includePaths
+		includePaths: [['styles'].concat(neat), 
+									 require('node-bourbon').includePaths,
+									 require('node-neat').includePaths
+									]
 	}))
 		.pipe(gulp.dest('./app/css'));
 });
