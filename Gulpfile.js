@@ -6,10 +6,10 @@ var paths = {
 	scss: './app/*.scss'
 };
 
-gulp.task('styles', function () {
+gulp.task('run', function () {
 	return gulp.src(paths.scss)
 		.pipe(sass({
-		includePaths: [['styles'].concat(neat), 
+		includePaths: [['run'].concat(neat), 
 									 require('node-bourbon').includePaths,
 									 require('node-neat').includePaths
 									]
@@ -18,5 +18,5 @@ gulp.task('styles', function () {
 });
 
 gulp.task('default',function(){
-	gulp.start('styles');
+	gulp.start('run');
 });
