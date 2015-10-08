@@ -1,31 +1,29 @@
-'use strict';
+(function() {
 
+	'use strict';
+	// Declare app level module which depends on filters, and services
+	var app = angular.module("AwesomeBlog", ["ngRoute, ui.router"]);
 
-// Declare app level module which depends on filters, and services
-module.exports = angular.module('app', [
-	'ngRoute',
-	'app.filters',
-	'app.services',
-	'app.directives',
-	'app.controllers',
-	'firebase'
-]).
-config(['$routeProvider', function($routeProvider) {
-	$routeProvider.when('/', {
-		templateUrl: 'partials/landing_page.html',
-		controller: 'LandingPageController'
-	});
-	$routeProvider.when('/blog-post', {
-		templateUrl: 'partials/blogpost.html',
-		controller: 'Blog-postController'
-	});
-	$routeProvider.when('/register', {
-		templateUrl: 'partials/register.html',
-		controller: 'AuthController'
-	});
-	$routeProvider.when('/login', {
-		templateUrl: 'partials/login.html',
-		controller: 'AuthController'
-	});
-	$routeProvider.otherwise({redirectTo: '/'});
-}]);
+	app.config(["$routeProvider", function ($routeProvider) {
+		$routeProvider.when("/blogposts", {
+			templateUrl: "/partials/blogpost.html",
+			controller: "BlogpostCtrl as vm",
+		})
+		.when("/blogposts/new", {
+			templateUrl: "/partials/form.html",
+			controller: "BlogFormCtrl as vm",
+		})
+		.when("/blogposts/:blogpost/edit", {
+			templateUrl: "partials/form.html",
+			controller: "BlogFormCtrl as vm",
+		})
+		.when("/blogposts/:blogpost_id", {
+			templateUrl: "/partials/blog.html",
+			controller: "BlogCtrl as vm",
+		})
+		.otherwise({
+			redirectTo: "/blogposts",
+		});
+	}]);
+
+}());
