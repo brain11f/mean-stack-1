@@ -1,9 +1,10 @@
 <section class="blog-container">
   <h1>Single Blogpost!</h1>
   <article class="blog-summary">
-    <h1>{{ blogpost.title }}</h1>
+    <h1>{{ vm.blogpost.title }}</h1>
+    <blogpost-details blogpost="vm.player"></blogpost>
     <p>
-      {{ blogpost.text }}
+      {{ vm.blogpost.text }}
     </p>
     <ul class="blog-metadata">
       <li>{{ blogpost.author }}</li>

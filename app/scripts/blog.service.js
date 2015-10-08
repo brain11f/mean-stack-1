@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  angular.module("AwesomeBlog").service("BlogService", ["$http", function ($http) {
+  angular.module("AwesomeBlog").service("BlogpostService", ["$http", function ($http) {
     var urlRoot = "/blogposts";
 
     var Blog = {
@@ -12,16 +12,16 @@
           return $http.get(urlRoot);
         }
       },
-      update: function (model) {
-        return $http.put(urlRoot + "/" + model._id, model);
+      update: function (blog) {
+        return $http.put(urlRoot + "/" + blog._id, blog);
       },
-      create: function (model) {
-        return $http.post(urlRoot, model); // ideal, but doesn't work
+      create: function (blog) {
+        return $http.post(urlRoot, blog); // ideal, but doesn't work
       },
-      delete: function (model) {
-        return $http.delete(urlRoot + "/" + model._id);
+      delete: function (blog) {
+        return $http.delete(urlRoot + "/" + blog._id);
       }
     };
-    return Player;
+    return Blog;
   }]);
 }());

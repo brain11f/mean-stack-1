@@ -39,7 +39,7 @@ var csspaths = {
 gulp.task('sass', function () {
 	return gulp.src(csspaths.scss)
 		.pipe(sass({
-		includePaths: [['run'].concat(neat), 
+		includePaths: [['run'].concat(neat),
 									 require('node-bourbon').includePaths,
 									 require('node-neat').includePaths
 									]

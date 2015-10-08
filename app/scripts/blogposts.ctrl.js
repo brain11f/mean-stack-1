@@ -1,7 +1,7 @@
 (function() {
   'use strict'
 
-  angular.module("AwesomeBlog").controller("BlogpostsCtrl", ["BlogService", function(BlogService) {
+  angular.module("AwesomeBlog").controller("BlogpostsCtrl", ["BlogpostService", function(BlogpostService) {
     var vm = this;
 
     vm.blogposts = [];
@@ -14,13 +14,13 @@
     }
 
     function getBlogposts() {
-      BlogService.get().then(function(resp) {
+      BlogpostService.get().then(function(resp) {
         vm.blogposts = resp.data;
       });
     }
 
     function deleteBlog (blog) {
-      BlogService.delete(blog).then(function() {
+      BlogpostService.delete(blog).then(function() {
         getBlogposts();
       });
     }

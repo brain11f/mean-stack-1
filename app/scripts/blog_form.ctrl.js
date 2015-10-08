@@ -1,7 +1,7 @@
 'use strict';
 (function() {
 
-  angular.module('AwesomeBlog').controller("BlogFormCtrl", ["BlogService", "$routParams", "$location", function(BlogService, $routeParams, $location){
+  angular.module('AwesomeBlog').controller("BlogFormCtrl", ["BlogpostService", "$routParams", "$location", function(BlogpostService, $routeParams, $location){
       var vm = this;
 
       vm.save = saveBlog;
@@ -12,7 +12,7 @@
 
       function start() {
         if ($routeParams.blogpost_id) {
-          BlogService.get($routeParams.blogpost_id).then(function(resp) {
+          BlogpostService.get($routeParams.blogpost_id).then(function(resp) {
           vm.blogpost = resp.data;
         });
       }
@@ -22,7 +22,7 @@
       var method;
 
       method = $routeParams.blogpost_id ? "update" : "create";
-      BlogService[method](vm.blogpost).then(function (resp) {
+      BlogpostService[method](vm.blogpost).then(function (resp) {
         $location.path("/blogposts/" + resp.data_id);
       });
     }
