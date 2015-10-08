@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
 		sass = require('gulp-sass'),
 		neat = require('node-neat'),
-		browserify = require('gulp-browserify'),
+		browserify = require('browserify'),
+		transform = require('vinyl-transform'),
 		uglify = require('gulp-uglify');
 
 ///////all the js to one min file///////////////////
@@ -24,9 +25,9 @@ var jsindex = {
 
 gulp.task('js', function () {
 	return gulp.src([angularjs.js, angularRouteJs.js, jsPaths.js, jsindex.js])
-   .pipe(browserify())
+		.pipe(browserify)
 //   .pipe(uglify())
-   .pipe(gulp.dest('./app/public/js'));
+		.pipe(gulp.dest('./app/public/js'));
 });
 
 //all the sass to css//////////////////////////////////
