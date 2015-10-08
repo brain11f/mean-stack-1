@@ -6,24 +6,37 @@ var gulp = require('gulp'),
 
 ///////all the js to one min file///////////////////
 
-var jsNodeModules = {
-	js: './node_modules/**/*.js'
+var angularjs = {
+	js: './node_modules/angular/angular.js'
 };
 
-gulp.task('modules', function () {
-	return gulp.src([jsNodeModules.js])
+gulp.task('angular', function () {
+	return gulp.src([angularjs.js])
 		.pipe(browserify())
 		.pipe(uglify())
 		.pipe(gulp.dest('./app/js'));
-	console.log('modules');
+	console.log('angular');
 });
+
+var angularRouteJs = {
+	js: './node_modules/angular-route/angular-route.js'
+};
+
+gulp.task('angularRoute', function () {
+	return gulp.src([angularRouteJs.js])
+		.pipe(browserify())
+		.pipe(uglify())
+		.pipe(gulp.dest('./app/js'));
+	console.log('angularRoute');
+});
+
 
 var jsPaths = {
 	js: './app/**/*.js'
 };
 
 gulp.task('js', function () {
-	return gulp.src([jsNodeModules.js, jsPaths.js])
+	return gulp.src([jsPaths.js])
    .pipe(browserify())
    .pipe(uglify())
    .pipe(gulp.dest('./app/js'));
@@ -50,12 +63,14 @@ gulp.task('sass', function () {
 
 gulp.task('run',function(){
 	gulp.start('sass');
-	gulp.start('modules');
+	gulp.start('angular');
+	gulp.start('angularRoute');
 	gulp.start('js');
 });
 
 gulp.task("watch", function() {
 	gulp.watch("./app/sass/*.scss", ["sass"]);
+	gulp.watch("./node_modules/angular/angular.js", ["angular"]);
+	gulp.watch("./node_modules/angular-route/angular-route.js", ["angularRoute"]);
 	gulp.watch("./app/*.js", ["js"]);
-	gulp.watch("./node_modules/*.js", ["modules"]);
 });
