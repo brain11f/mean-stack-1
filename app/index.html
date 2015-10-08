@@ -4,31 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/index.css">
     <title>Webpack Angular Part 1</title>
   </head>
 
   <body ng-app="app">
 
     <!-- NAV -->
-    <header>
+    <header class="header-container">
     	<h1 class="logo">intelly</h1>
-    	<nav>
+			<nav class="primary-nav-wrap">
 				<ul>
-					<li>HOME</li>
-					<li>PAGES</li>
-					<li>BLOG</li>
-					<li>PORTFOLIO</li>
-					<li>SHORTCODES</li>
-					<li>FEATURES</li>
-					<li>CONTACT</li>
+					<li><a href="#">Menu 1</a>
+						<ul>
+							<li><a href="#">HOME</a></li>
+							<li><a href="#">PAGES</a></li>
+							<li><a href="#">BLOG</a></li>
+							<li><a href="#">PORTFOLIO</a>
+								<ul>
+									<li><a href="#">Web Design</a></li>
+									<li><a href="#">Photography</a></li>
+									<li><a href="#">Consulting</a></li>
+									<li><a href="#">IOS Develpment</a></li>
+								</ul>
+							</li>
+							<li><a href="#">SHORTCODES</a></li>
+							<li><a href="#">FEATURES</a></li>
+							<li><a href="#">CONTACT</a></li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
     </header>
 
     <!-- Blog Main SECTION -->
     <!-- (Call this thing a section!) -->
-    <section>
+    <section class="page-banner">
       <h1>Blog</h1>
       <p>The secular cooling that must someday overtake our planet has already gone far indeed with our neighbour. Its physical condition is still largely a mystery, but we know now that</p>
     </section>
@@ -38,35 +49,24 @@
       <ul>
         <li><a href="#">HOME</a></li>
         <li><a href="#">BLOG</a></li>
+        <!-- BLOG link is breadcrumbs -->
 			</ul>
 		</nav>
     <div class="share-social-icons">
 		  <p>Share</p>
       <ul>
-        <li><a class="icon-twitter" href=""></a></li>
-        <li><a class="icon-facebook" href=""></a></li>
-        <li><a class="icon-google" href=""></a></li>
-        <li><a class="icon-pinterest" href=""></a></li>
+        <li><a class="icon-twitter" href="#"></a></li>
+        <li><a class="icon-facebook" href="#"></a></li>
+        <li><a class="icon-google" href="#"></a></li>
+        <li><a class="icon-pinterest" href="#"></a></li>
       </ul>
     </div>
 
     <!-- SOME KIND OF NG-VIEW THING -->
     <!-- (for the blog posts) -->
-    <section class="blog-container">
-      <!-- each post = an article -->
-      <article class="blog-summary">
-        <h1>Integer dictum erat et</h1>
-        <p>
-          The secular cooling that must someday overtake our planet has already gone far indeed with our neighbour. Its physical condition is still largely a mystery, but we know now that even in its equatorial region the midday temperature barely approaches that of our coldest winter. Its air is much more attenuated than ours its
-        </p>
-        <ul class="blog-metadata">
-          <li>By carlo</li>
-          <li>April 07rd, 2014</li>
-          <li>4 comments</li>
-        </ul>
-        <a class="btn-primary" href="#">Read More</a>
-      </article>
-    </section>
+		<div nginclude="blogpost.html" ng-controller="Blog-postController">
+    	
+    </div>
 
     <!-- PREV 1 2 3 NEXT  -->
     <!-- (links to prev / next pages) -->
@@ -91,22 +91,43 @@
         <a class="btn-secondary" href="#">Contact Now</a>
         <a class="btn-secondary" href="#">Learn More</a>
       </div>
-      <div class="contact-info-wrapper">
-        <address>
-          2319 Hilltop Haven Drive<br>
-          Upper Greenwood Lake, NJ 07421
-        </address>
 
-        <a href="tel:+16624076792">662-407-6792</a><br>
-        <a href="mailto:contact@intell.com" target="_top">contact@intell.com</a>
+      <div class="contact-info-wrapper">
+        <div class="address-wrapper">
+          <address>
+            2319 Hilltop Haven Drive<br>
+            Upper Greenwood Lake, NJ 07421
+          </address>
+        </div>
+
+        <div class="phone-email-wrapper">
+          <a href="tel:+16624076792">662-407-6792</a><br>
+          <a href="mailto:contact@intell.com" target="_top">contact@intell.com</a>
+        </div>
       </div>
-      <div class="contact-info-social-wrapper">
+
+
+
+      <div class="contact-social-links-wrapper">
         <ul>
-          <li>twitter icon FOLLOW US</li>
-          <li>facebook icon LIKE US</li>
-          <li>linkedin icon CONNECT</li>
+          <li>
+            <a class="icon-twitter" href="#">
+              <span>Follow Us</span>
+            </a>
+          </li>
+          <li>
+            <a class="icon-facebook" href="#">
+              <span>Like Us</span>
+            </a>
+          </li>
+          <li>
+            <a class="icon-linkedin" href="#">
+              <span>Connect</span>
+            </a>
+          </li>
         </ul>
       </div>
+
     </section>
 
     <!-- FOOTER  -->
