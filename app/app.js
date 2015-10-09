@@ -34,6 +34,11 @@
 
 	}]);
 
+	// Controller to make DATE work!
+	AwesomeBlogApp.controller("DateCtrl", ["$scope", function($scope) {
+			$scope.date = new Date();
+	}]);
+
 }());
 
 // require('./scripts/blog.service');

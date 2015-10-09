@@ -9,7 +9,7 @@ var BlogpostSchema = new Schema({
   title: String,
   text: String,
   author: String,
-  date: String
+  date: Date
 });
 
 // Export the Mongoose model
