@@ -30,11 +30,11 @@ app.use(bodyparser.urlencoded({
   extended: true
 }));
 
-app.use(express.static(__dirname + '/app'));
+app.use(express.static(__dirname + '/app/public'));
 
 // Root route
 router.get('/', function (req, res) {
-  res.sendFile(__dirname + '/app/index.html');
+  res.sendFile(__dirname + '/app/public/index.html');
 });
 
 // Test route
