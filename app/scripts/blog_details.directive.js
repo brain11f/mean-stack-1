@@ -1,15 +1,14 @@
 require("../app")
 
-angular.module('soccr')
-.directive('playerDetails', function90 {
-  return {
-    scope: {
-      foobar: '=player',
-    },
-    templateUrl: "views/player/player_details_directives.html"
-  }
-})
-
+angular.module("AwesomeBlogApp")
+	.directive("bl", function () {
+	return {
+		scope: {
+			player: "=player", // functionally the same as ng-model
+		},
+		templateUrl: "views/player/player_details_directive.html",
+	};
+});
 // in the .html
 //dl
 //<dt> position</dt>
