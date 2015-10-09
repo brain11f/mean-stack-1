@@ -26,8 +26,8 @@
 
 .sub-nav-wrapper {
   padding: 0.5em;
-  border-bottom: 0.1em solid black;
-  // border-color: color($key: 'primary')
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, .1);
   @media screen and (min-width: 50em) {
     padding-left: 5em;
     height: 2.5em;

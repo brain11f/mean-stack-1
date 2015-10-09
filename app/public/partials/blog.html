@@ -1,18 +1,15 @@
 <section class="blog-container">
   <h1>Single Blogpost!</h1>
   <article class="blog-summary">
+		<!-- <blogpost-details blogpost="vm.player"></blogpost-details> -->
     <h1>{{ vm.blogpost.title }}</h1>
-		<blogpost-details blogpost="vm.player"></blogpost-details>
-    <p>
-      {{ vm.blogpost.text }}
-    </p>
+    <p> {{ vm.blogpost.text }}</p>
     <ul class="blog-metadata">
-      <li>{{ blogpost.author }}</li>
-      <li>{{ blogpost.date }}</li>
+      <li>{{ vm.blogpost.author }}</li>
+      <li>{{ vm.blogpost.date }}</li>
       <li>4 comments</li>
     </ul>
     <a class="btn-primary" href="#/blogposts/{{ blogpost._id }}">Read More</a>
-
-    (<button ng-click="vm.delete(blogpost)">Delete</button>)
+    <button ng-click="vm.delete(blogpost)">Delete</button>
   </article>
 </section>
