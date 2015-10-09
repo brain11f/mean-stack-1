@@ -53,17 +53,6 @@ gulp.task('browserify', function() {
 	return es.merge.apply(null, tasks);
 });
 
-//gulp.task('browserify', function() {
-//	return browserify(angularjs.js, angularRouteJs.js, jsPaths.js, jsindex.js)
-//		.bundle()
-//	//Pass desired output filename to vinyl-source-stream
-//		.pipe(source('bundle.js'))
-//	// Start piping stream to tasks!
-//		.pipe(gulp.dest('./app/public/js'));
-//});
-
-//all the sass to css//////////////////////////////////
-
 var csspaths = {
 	scss: './app/**/*.scss'
 };
