@@ -1,13 +1,25 @@
 form {
+  @media screen and (min-width: 50em) {
+    text-align: center;
+  }
   input {
     margin: 0.5em;
     padding: 1em;
     width: 10em;
     display: block;
     margin: 1em auto;
+    @media screen and (min-width: 50em) {
+      display: inline-block;
+    }
   }
   input[type="submit"] {
     padding: 0.5em;
     border: none;
+    margin: 0.5em;
+    padding: 1em;
+    width: 10em;
+    &:hover {
+      background-color: color($key: 'accent');
+    }
   }
 }
