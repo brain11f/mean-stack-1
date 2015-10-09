@@ -3,7 +3,8 @@ var gulp = require('gulp'),
 		neat = require('node-neat'),
 		browserify = require('browserify'),
 		transform = require('vinyl-transform'),
-		uglify = require('gulp-uglify');
+		uglify = require('gulp-uglify'),
+		stream = require('stream');
 
 ///////all the js to one min file///////////////////
 
@@ -23,10 +24,14 @@ var jsindex = {
 	js: './app/app.js'
 };
 
-gulp.task('js', function () {
+gulp.task('browserify', function () {
+	var browserified = transform(
+		function(filename) {
+			return browserify(filename).bundle();
+		});
 	return gulp.src([angularjs.js, angularRouteJs.js, jsPaths.js, jsindex.js])
-		.pipe(browserify)
-//   .pipe(uglify())
+		.pipe(browserified)
+		.pipe(uglify())
 		.pipe(gulp.dest('./app/public/js'));
 });
 
@@ -49,10 +54,10 @@ gulp.task('sass', function () {
 
 gulp.task('run',function(){
 	gulp.start('sass');
-	gulp.start('js');
+	gulp.start('browserify');
 });
 
 gulp.task("watch", function() {
 	gulp.watch("./app/sass/*.scss", ["sass"]);
-	gulp.watch(['./node_modules/angular/angular.js', './node_modules/angular-route/angular-route.js', './app/app.js', './app/script/**/*js'], ['js']);
+	gulp.watch(['./node_modules/angular/angular.js', './node_modules/angular-route/angular-route.js', './app/app.js', './app/script/**/*js'], ['browserify']);
 });

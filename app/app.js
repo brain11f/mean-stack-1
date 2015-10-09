@@ -24,6 +24,19 @@
 			templateUrl: "/partials/blog.html",
 			controller: "BlogpostCtrl as vm",
 		})
+		
+			.when("/blogposts/new", {
+			templateUrl: "/partials/form.html",
+			controller: "BlogFormCtrl as vm",
+		})
+			.when("/blogposts/:blogpost/edit", {
+			templateUrl: "partials/form.html",
+			controller: "BlogFormCtrl as vm",
+		})
+			.when("/blogposts/:blogpost_id", {
+			templateUrl: "/partials/blog.html",
+			controller: "BlogpostCtrl as vm",
+		})
 			.otherwise({
 			redirectTo: "/blogposts",
 		});
