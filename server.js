@@ -62,7 +62,7 @@ router.route('/blogposts')
       if (err) {
         res.send(err);
       }
-      res.json({ message: "Blogpost successfully saved."});
+      res.json(blogpost);
     });
   })
 
