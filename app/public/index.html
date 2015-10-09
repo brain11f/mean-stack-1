@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="AwesomeBlog">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -8,7 +8,7 @@
     <title>Webpack Angular Part 1</title>
   </head>
 
-  <body ng-app="AwesomeBlog">
+	<body>
 
     <!-- NAV -->
     <header class="header-container">
@@ -68,10 +68,10 @@
     <!-- (for the blog posts) -->
 		<!-- <div nginclude="blogpost.html" ng-controller="Blog-postController"></div> -->
 
-    <main ng-view></main>
+		<div ng-controller="BlogpostsCtrl" ng-view></div>
 
     <!-- PREV 1 2 3 NEXT  -->
-    <!-- (links to prev / next pages) -->
+		<!-- (links to prev / next pages) BlogpostsCtrl -->
     <nav class="page-guide">
       <ul>
         <li><a href="#">PREV</a></li>
@@ -140,6 +140,16 @@
         <li><a href="#">SUPPORT</a></li>
       </ul>
     </footer>
-    <script src="js/bundle.js"></script>
+<!--    <script src="js/bundle.js"></script>-->
+    
+    <script src="js/node_modules/angular/angular.bundle.js"></script>
+    <script src="js/node_modules/angular-route/angular-route.bundle.js"></script>
+    <script src="js/app/app.bundle.js"></script>
+		<script src="js/app/scripts/blog_details.directive.bundle.js"></script>
+    <script src="js/app/scripts/blog_form.ctrl.bundle.js"></script>
+		<script src="js/app/scripts/blog.ctrl.bundle.js"></script>
+    <script src="js/app/scripts/blog.service.bundle.js"></script>
+    <script src="js/app/scripts/blogposts.ctrl.bundle.js"></script>
+        
   </body>
 </html>
