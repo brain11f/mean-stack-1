@@ -1,4 +1,4 @@
-require("../app")
+require("../app");
 
 angular.module("AwesomeBlog")
 	.directive("bl", function () {

@@ -1,5 +1,5 @@
 (function() {
-  'use strict'
+  'use strict';
 
   angular.module("AwesomeBlog").controller("BlogpostsCtrl", ["BlogpostService", function(BlogpostService) {
     var vm = this;
