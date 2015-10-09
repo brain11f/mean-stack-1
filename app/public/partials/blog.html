@@ -1,6 +1,6 @@
 <section class="blog-container">
   <h1>Single Blogpost!</h1>
-  <article ng-controller="BlogpostCtrl" class="blog-summary">
+  <article ng-controller="BlogpostCtrl as vm" class="blog-summary">
 		<!-- <blogpost-details blogpost="vm.player"></blogpost-details> -->
     <h1>{{ vm.blogpost.title }}</h1>
     <p> {{ vm.blogpost.text }}</p>
@@ -9,7 +9,7 @@
       <li>{{ vm.blogpost.date }}</li>
       <li>4 comments</li>
     </ul>
-    <a class="btn-primary" href="#/blogposts/{{ blogpost._id }}">Read More</a>
+    <a class="btn-primary" href="#/blogposts/{{ blogpost._id }}">View All</a>
     <button ng-click="vm.delete(blogpost)">Delete</button>
   </article>
 </section>
