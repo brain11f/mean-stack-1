@@ -8,23 +8,6 @@ var gulp = require('gulp'),
 		es = require('event-stream');
 
 ///////all the js to one min file///////////////////
-
-var angularjs = {
-	js: './node_modules/angular/angular.js'
-};
-
-var angularRouteJs = {
-	js: './node_modules/angular-route/angular-route.js'
-};
-
-var jsPaths = {
-	js: './app/scripts/*.js'
-};
-
-var jsindex = {
-	js: './app/app.js'
-};
-
 gulp.task('browserify', function() {
 	// we define our input files, which we want to have
 	// bundled:

@@ -36,10 +36,11 @@
     "node-bourbon": "^4.2.3",
     "node-neat": "^1.7.2",
     "node-sass": "^3.3.3",
+    "stream-browserify": "^2.0.1",
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-		"angular-route": "^1.4.7",
+    "angular-route": "^1.4.7",
     "angular": "^1.4.7",
     "body-parser": "^1.14.1",
     "mongoose": "^4.1.10"
