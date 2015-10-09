@@ -1,9 +1,10 @@
 .blog-summary {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: center);
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // align-items: center;
   margin: 1em auto;
   padding-bottom: 3em;
   border-bottom: 1px solid;
@@ -71,9 +72,9 @@
     border: none;
     width: 5em;
     margin: 1em auto;
-    color: color($key: 'base');
+    color: color('base');
     &:hover {
-      background-color: color($key: 'accent');
+      background-color: color('accent');
       cursor: pointer;
     }
     @media only screen and (min-width: $break) {

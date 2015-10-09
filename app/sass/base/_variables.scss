@@ -10,23 +10,17 @@ $colors: (
   'accent': #97f1e7,
 );
 
-
-$browser-context: 24; // Default
-
-@function em($pixels, $context: $browser-context) {
-  @return #{$pixels/$context}em;
-}
 //text size maps
 $font-size: (
-  'x-small': em(22),
-  'small': em(24),
-  'medium': em(28),
-  'large': em(32),
-  'x-large': em(36),
-  'xx-large': em(42),
-  'mega-small': em(56),
-  'mega-medium': em(72),
-  'mega-large': em(80),
+  'x-small': em(14),
+  'small': em(16),
+  'medium': em(20),
+  'large': em(24),
+  'x-large': em(28),
+  'xx-large': em(34),
+  'mega-small': em(48),
+  'mega-medium': em(64),
+  'mega-large': em(72),
 );
 
 

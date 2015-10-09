@@ -1,6 +1,6 @@
 // share social icons
 .share-social-icons {
-  font-size: font-size($key: 'x-small');
+  font-size: font-size('x-small');
   font-family: font-family('primary', 'light');
   text-align: center;
   padding: 0.5em;
@@ -23,9 +23,9 @@
   }
   a {
     text-decoration: none;
-    color: color($key: 'primary');
+    color: color('primary');
     &:hover {
-      color: color($key: 'accent');
+      color: color('accent');
     }
   }
 }
