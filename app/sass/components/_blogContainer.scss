@@ -1,6 +1,11 @@
 .blog-container {
-  padding: 0 10%;
+  padding: 5% 10%;
   @media only screen and (min-width) {
     padding: 0 20%;
+  }
+  h1 {
+    font-family: font-family('primary', 'regular');
+    font-size: font-size($key: 'xx-large');
+    text-align: center;
   }
 }
