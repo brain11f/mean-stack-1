@@ -8,13 +8,13 @@
 
 	config(["$routeProvider", function ($routeProvider) {
 		$routeProvider
-			
+
 		////route home page blog posts//////////
 			.when("/blogposts", {
 			templateUrl: "partials/blogpost.html",
 			controller: "BlogpostsCtrl as vm",
 		})
-		
+
 		/////form to make more blog posts///////
 			.when("/blogposts/new", {
 			templateUrl: "partials/form.html",
@@ -31,9 +31,9 @@
 			.otherwise({
 			redirectTo: "/blogposts",
 		});
-		
+
 	}]);
-	
+
 }());
 
 // require('./scripts/blog.service');

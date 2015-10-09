@@ -1,6 +1,6 @@
 require("../app")
 
-angular.module("AwesomeBlogApp")
+angular.module("AwesomeBlog")
 	.directive("bl", function () {
 	return {
 		scope: {
