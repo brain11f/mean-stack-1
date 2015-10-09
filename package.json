@@ -31,9 +31,11 @@
     "express": "^4.13.3",
     "gulp": "^3.9.0",
     "gulp-install": "^0.6.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.4",
     "gulp-strip-debug": "^1.0.2",
     "gulp-uglify": "^1.4.1",
+    "gulpify": "^0.1.1",
     "install": "^0.1.8",
     "node-bourbon": "^4.2.3",
     "node-neat": "^1.7.2",
@@ -42,7 +44,7 @@
     "sass-loader": "^3.0.0",
     "stream-browserify": "^2.0.1",
     "style-loader": "^0.12.4",
-    "vinyl-transform": "^1.0.0"
+    "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
     "angular": "^1.4.7",

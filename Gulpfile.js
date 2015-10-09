@@ -2,9 +2,8 @@ var gulp = require('gulp'),
 		sass = require('gulp-sass'),
 		neat = require('node-neat'),
 		browserify = require('browserify'),
-		transform = require('vinyl-transform'),
-		uglify = require('gulp-uglify'),
-		stream = require('stream');
+		source = require('vinyl-source-stream'),
+		uglify = require('gulp-uglify');
 
 ///////all the js to one min file///////////////////
 
@@ -24,14 +23,30 @@ var jsindex = {
 	js: './app/app.js'
 };
 
-gulp.task('browserify', function () {
-	var browserified = transform(
-		function(filename) {
-			return browserify(filename).bundle();
-		});
-	return gulp.src([angularjs.js, angularRouteJs.js, jsPaths.js, jsindex.js])
-		.pipe(browserified)
-		.pipe(uglify())
+//gulp.task('browserify', function () {
+//	var browserified = transform(function(filename) {
+//		var b = browserify(filename);
+//		return b.bundle();
+//	});
+//	return gulp.src([angularjs.js, angularRouteJs.js, jsPaths.js, jsindex.js])
+//		.pipe(browserified)
+//		.pipe(uglify())
+//		.pipe(gulp.dest('./app/public/js'));
+//});
+
+//gulp.task('browserify', function () {
+//	return browserify([__dirname + '/lib/browserified.js']).bundle()
+//		.pipe(transform([angularjs.js, angularRouteJs.js, jsPaths.js, jsindex.js]))
+//		.pipe(uglify())
+//		.pipe(gulp.dest('./app/public/js'));
+//});
+
+gulp.task('browserify', function() {
+	return browserify(angularjs.js, angularRouteJs.js, jsPaths.js, jsindex.js)
+		.bundle()
+	//Pass desired output filename to vinyl-source-stream
+		.pipe(source('bundle.js'))
+	// Start piping stream to tasks!
 		.pipe(gulp.dest('./app/public/js'));
 });
 
