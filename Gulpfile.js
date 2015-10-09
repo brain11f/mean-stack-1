@@ -3,7 +3,9 @@ var gulp = require('gulp'),
 		neat = require('node-neat'),
 		browserify = require('browserify'),
 		source = require('vinyl-source-stream'),
-		uglify = require('gulp-uglify');
+		uglify = require('gulp-uglify'),
+		rename = require('gulp-rename'),
+		es = require('event-stream');
 
 ///////all the js to one min file///////////////////
 
@@ -23,34 +25,33 @@ var jsindex = {
 	js: './app/app.js'
 };
 
-//gulp.task('browserify', function () {
-//	var browserified = transform(function(filename) {
-//		var b = browserify(filename);
-//		return b.bundle();
-//	});
-//	return gulp.src([angularjs.js, angularRouteJs.js, jsPaths.js, jsindex.js])
-//		.pipe(browserified)
-//		.pipe(uglify())
-//		.pipe(gulp.dest('./app/public/js'));
-//});
-
-//gulp.task('browserify', function () {
-//	return browserify([__dirname + '/lib/browserified.js']).bundle()
-//		.pipe(transform([angularjs.js, angularRouteJs.js, jsPaths.js, jsindex.js]))
-//		.pipe(uglify())
-//		.pipe(gulp.dest('./app/public/js'));
-//});
-
 gulp.task('browserify', function() {
-	return browserify(angularjs.js, angularRouteJs.js, jsPaths.js, jsindex.js)
-		.bundle()
-	//Pass desired output filename to vinyl-source-stream
-		.pipe(source('bundle.js'))
-	// Start piping stream to tasks!
-		.pipe(gulp.dest('./app/public/js'));
+	// we define our input files, which we want to have
+	// bundled:
+	var files = [
+		'./node_modules/angular/angular.js',
+		'./node_modules/angular-route/angular-route.js',
+		'./app/app.js',
+		'./app/scripts/blog_details.directive.js',
+		'./app/scripts/blog_form.ctrl.js',
+		'./app/scripts/blog.ctrl.js',
+		'./app/scripts/blog.service.js',
+		'./app/scripts/blogposts.ctrl.js'
+	];
+	// map them to our stream function
+	var tasks = files.map(function(entry) {
+		return browserify({ entries: [entry] })
+			.bundle()
+			.pipe(source(entry))
+		// rename them to have "bundle as postfix"
+			.pipe(rename({
+			extname: '.bundle.js'
+		}))
+			.pipe(gulp.dest('./app/public/js'));
+	});
+	// create a merged stream
+	return es.merge.apply(null, tasks);
 });
-
-//all the sass to css//////////////////////////////////
 
 var csspaths = {
 	scss: './app/**/*.scss'
