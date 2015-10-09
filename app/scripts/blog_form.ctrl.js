@@ -11,12 +11,12 @@
       start();
 
       // IF statement only works when edit
-      function start() {
-        vm.blogpost.date = new Date(Date.now());
-        if ($routeParams.blogpost_id) {
-          BlogpostService.get($routeParams.blogpost_id).then(function(resp) {
-          vm.blogpost = resp.data;
-          vm.blogpost.date = vm.blogpost.date || new Date(Date.now());
+    function start() {
+      vm.blogpost.date = new Date(Date.now());
+      if ($routeParams.blogpost_id) {
+        BlogpostService.get($routeParams.blogpost_id).then(function(resp) {
+        vm.blogpost = resp.data;
+        vm.blogpost.date = vm.blogpost.date || new Date(Date.now());
         });
       }
     }

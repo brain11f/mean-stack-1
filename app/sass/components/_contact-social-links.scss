@@ -11,7 +11,7 @@
     margin-top: 0;
   }
   ul {
-    @include flexbox;
+    @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: center);
     padding-left: 0;
     // margin-right: 2em;
     // width: 100%;
@@ -27,12 +27,12 @@
     // Icon styles in a:before
     &:before {
       font-size: 1.5em;
-      background-color: color($key: 'base');
+      background-color: color('base');
       border-radius: 50%; // Icon is in the <a> box
       border-color: transparent;
     }
     &:hover {
-      color: color($key: 'accent');
+      color: color('accent');
     }
   }
   // Span for text for text styles
@@ -47,7 +47,7 @@
 // Code for the circle
 %border-circle {
   position: absolute;
-  border: 0.1em solid color($key: 'secondary');
+  border: 0.1em solid color('secondary');
   border-radius: 50%;
   width: 8em;
   height: 4.5em;

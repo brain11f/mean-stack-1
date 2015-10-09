@@ -1,15 +1,15 @@
 <section class="blog-container">
-	<a class="btn-primary" href="#/blogposts/new">Add New</a>
-	<h1>List of Blogposts!</h1>
+<!-- 	<h1>List of Blogposts!</h1> -->
 	<article ng-repeat="blogpost in vm.blogposts" class="blog-summary">
 		<h1>{{ blogpost.title }}</h1>
 		<p> {{ blogpost.text }}</p>
 		<ul class="blog-metadata">
 			<li>{{ blogpost.author }}</li>
-			<li>{{ blogpost.date }}</li>
+			<li class="date">{{ blogpost.date | date:"MM-dd-yyyy" }}</li>
 			<li>4 comments</li>
 		</ul>
 		<a class="btn-primary" href="#/blogposts/{{ blogpost._id }}">Read More</a>
-		<button ng-click="vm.delete(blogpost)">Delete</button>
+		<a class="btn-small" ng-click="vm.delete(blogpost)">Delete</a>
 	</article>
+	<a class="btn-primary-alt" href="#/blogposts/new">Add New</a>
 </section>

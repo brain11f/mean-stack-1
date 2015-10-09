@@ -1,28 +1,58 @@
-@mixin button($background, $color, $hover-bg, $hover-color) {
+@mixin button($background, $color, $hover-bg, $hover-color, $width, $f-size) {
   font-family: font-family('primary', 'medium');
-  font-size: font-size('small');
+  font-size: font-size($f-size);
   letter-spacing: .125em;
   display: inline-flex;
   justify-content: center;
   text-transform: uppercase;
-  width: 12em;
+  width: $width;
   padding: 1em 0;
   border: solid 1px;
   background-color: $background;
   color: $color;
-  border-color: $background;
+  border-color: $color;
   border-radius: .5em;
-  &:hover {
+  &:hover{
     background-color: $hover-bg;
     color: $hover-color;
-    border-color: $hover-bg;
+    border-color: $hover-color;
   }
 }
 
 .btn-primary {
-  @include button(color('primary'), color('base'), color('accent'), color('base'));
+  @include button(color('primary'), color('base'), color('accent'), color('base'), 5em, 'small');
+  @media only screen and (min-width: $break) {
+    width: 12em;
+  }
+}
+
+.btn-primary-alt {
+  @include button(color('base'), color('primary'), color('primary'), color('base'), 5em, 'small');
+  &:hover {
+    border-color: color('primary');
+  }
+  @media only screen and (min-width: $break) {
+    width: 12em;
+  }
 }
 
 .btn-secondary {
-  @include button(color('accent'), color('base'), color('base'), color('primary'));
+  @include button(color('accent'), color('base'), color('base'), color('primary'), 5em, 'small');
+  &:hover {
+    border-color: color('base');
+  }
+  @media only screen and (min-width: $break) {
+    width: 12em;
+  }
+}
+
+.btn-small {
+  @include button(color('base'), color('primary'), color('primary'), color('base'), 2em, 'x-small');
+  padding: .5em;
+  &:hover {
+    border-color: color('primary');
+  }
+  @media only screen and (min-width: $break) {
+    width: 6em;
+  }
 }

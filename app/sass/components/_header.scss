@@ -2,14 +2,13 @@
 @import "header/header-nav";
 
 .header-container {
-	background-color: color($key: 'primary');
-	display:flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	background-color: color('primary');
+	@include flex-box($align: center, $wrap: wrap, $direction: row, $justify: space-between);
 	align-content: flex-start;
-	align-items: center;
+
 	h1, a {
-		color: color($key: 'base');
+		color: color('base');
 	}
 }
+
+

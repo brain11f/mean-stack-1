@@ -1,26 +1,22 @@
 .blog-summary {
   @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: center);
-  // display: flex;
-  // flex-direction: row;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  // align-items: center;
   margin: 1em auto;
   padding-bottom: 3em;
   border-bottom: 1px solid;
   border-color: rgba(0, 0, 0, .1);
   @media only screen and (min-width: $break) {
-    justify-content: space-between;
+      @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: space-between);
   }
 
   h1 {
     font-family: font-family('primary', 'regular');
-    font-size: font-size('large');
+    font-size: font-size('x-large');
     text-align: left;
     flex-basis: 100%;
     order: 1;
-    margin: 1% auto;
     @media only screen and (min-width: $break) {
+      flex-basis: 60%;
+      margin: 1em 0;
       order: 1;
     }
   }
@@ -33,7 +29,7 @@
     flex-basis: 100%;
     order: 3;
     @media only screen and (min-width: $break) {
-      order: 2;
+      order: 3;
     }
   }
 
@@ -43,7 +39,7 @@
     order: 2;
     @media only screen and (min-width: $break) {
       flex-basis: 50%;
-      order: 3;
+      order: 4;
     }
 
     li {
@@ -66,19 +62,19 @@
   .btn-primary {
     order: 4;
     margin-top: 1em;
+    @media only screen and (min-width: $break) {
+      order: 5
+    }
   }
-  button {
-    padding: 0.5em;
-    border: none;
-    width: 5em;
-    margin: 1em auto;
-    color: color('base');
+
+  .btn-small {
+    order: 5;
+    margin: 1em 0;
     &:hover {
-      background-color: color('accent');
       cursor: pointer;
     }
     @media only screen and (min-width: $break) {
-      float: left;
+      order: 2
     }
   }
 }
