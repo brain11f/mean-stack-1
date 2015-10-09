@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/brain11f/mean-stack-1#readme",
   "devDependencies": {
-    "angular-route": "^1.4.7",
     "autoprefixer-loader": "^3.1.0",
     "browserify": "^11.2.0",
     "event-stream": "^3.3.1",
@@ -33,17 +32,14 @@
     "gulp-install": "^0.6.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.4",
-    "gulp-strip-debug": "^1.0.2",
     "gulp-uglify": "^1.4.1",
-    "gulpify": "^0.1.1",
     "node-bourbon": "^4.2.3",
     "node-neat": "^1.7.2",
     "node-sass": "^3.3.3",
-    "r": "0.0.5",
-    "stream-browserify": "^2.0.1",
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+		"angular-route": "^1.4.7",
     "angular": "^1.4.7",
     "body-parser": "^1.14.1",
     "mongoose": "^4.1.10"

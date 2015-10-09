@@ -7,9 +7,7 @@
 		<link rel="stylesheet" href="css/index.css">
     <title>AwesomeBlog!</title>
   </head>
-
 	<body>
-
     <!-- NAV -->
     <header class="header-container">
     	<h1 class="logo">intelly</h1>
@@ -38,7 +36,6 @@
     </header>
 
     <!-- Blog Main SECTION -->
-    <!-- (Call this thing a section!) -->
     <section class="page-banner">
       <h1>Blog</h1>
       <p>The secular cooling that must someday overtake our planet has already gone far indeed with our neighbour. Its physical condition is still largely a mystery, but we know now that</p>
@@ -65,13 +62,9 @@
     </div>
 
     <!-- SOME KIND OF NG-VIEW THING -->
-    <!-- (for the blog posts) -->
-		<!-- <div nginclude="blogpost.html" ng-controller="Blog-postController"></div> -->
-
 		<div ng-controller="BlogpostsCtrl" ng-view></div>
 
     <!-- CONTACT SECTION  -->
-    <!-- (include the text, links, address, social media) -->
     <section>
       <div class="learn-more-wrapper">
         <h1>Serene in their assurance of their empire over matter</h1>
@@ -79,7 +72,6 @@
         <a class="btn-secondary" href="#">Contact Now</a>
         <a class="btn-secondary" href="#">Learn More</a>
       </div>
-
       <div class="contact-info-wrapper">
         <div class="address-wrapper">
           <address>
@@ -87,15 +79,11 @@
             Upper Greenwood Lake, NJ 07421
           </address>
         </div>
-
         <div class="phone-email-wrapper">
           <a href="tel:+16624076792">662-407-6792</a><br>
           <a href="mailto:contact@intell.com" target="_top">contact@intell.com</a>
         </div>
       </div>
-
-
-
       <div class="contact-social-links-wrapper">
         <ul>
           <li>
@@ -115,7 +103,6 @@
           </li>
         </ul>
       </div>
-
     </section>
 
     <!-- FOOTER  -->
@@ -128,8 +115,8 @@
         <li><a href="#">SUPPORT</a></li>
       </ul>
     </footer>
-<!--    <script src="js/bundle.js"></script>-->
 
+    <!-- Script tags -->
     <script src="js/node_modules/angular/angular.bundle.js"></script>
     <script src="js/node_modules/angular-route/angular-route.bundle.js"></script>
     <script src="js/app/app.bundle.js"></script>
