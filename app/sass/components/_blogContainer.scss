@@ -1,7 +1,7 @@
 .blog-container {
   padding: 5% 10%;
   @media only screen and (min-width: $break) {
-    padding: 5% 20%;
+    padding: 0 20%;
   }
   h1 {
     font-family: font-family('primary', 'regular');
