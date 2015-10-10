@@ -2,7 +2,7 @@
 <!-- 	<h1>List of Blogposts!</h1> -->
 	<article ng-repeat="blogpost in vm.blogposts" class="blog-summary">
 		<h1>{{ blogpost.title }}</h1>
-		<p> {{ blogpost.text | limitTo: 300}}{{blogpost.text.length > 300 ? '...' : ''}}</p>
+		<p> {{ blogpost.text | limitTo: 300 }}{{ blogpost.text.length > 300 ? '...' : '' }}</p>
 		<ul class="blog-metadata">
 			<li>{{ blogpost.author }}</li>
 			<li class="date">{{ blogpost.date | date:"MM-dd-yyyy" }}</li>

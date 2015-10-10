@@ -48,3 +48,4 @@ In this assignment, you should be able to demonstrate mastery over the basics of
 
 1. Function from Web Design Weekly article on converting Px to Em. Wanted to limit excess dependencies when not needed, so avoided adding Bourbon and others (http://web-design-weekly.com/snippets/converts-pixels-to-ems-with-sass/)
 1. Font Family Function inspired by map-get article for map-get inception for colors by Jake Albaugh (http://codepen.io/jakealbaugh/post/using-sass-functions-to-access-complex-variable-maps)
+1. Found limitTo in Angular Docs when searching for a way to show partial text. Found concatenation idea from Nicholas Mandel (https://nicholasmandel.wordpress.com/2014/12/18/limit-characters-displayed-in-text-with-angular/);
