@@ -5,7 +5,8 @@ var gulp = require('gulp'),
 		source = require('vinyl-source-stream'),
 		uglify = require('gulp-uglify'),
 		rename = require('gulp-rename'),
-		es = require('event-stream');
+		es = require('event-stream'),
+		autoprefixer = require('gulp-autoprefixer');
 
 var csslint = require('gulp-csslint');
 var jshint = require('gulp-jshint');
@@ -44,6 +45,10 @@ gulp.task('sass', function () {
 									 require('node-neat').includePaths
 									]
 	}))
+		.pipe(autoprefixer({
+		browsers: ['last 2 versions'],
+		cascade: false
+	}))
 		.pipe(gulp.dest('./app/public/css'));
 });
 
@@ -53,7 +58,7 @@ gulp.task('run',function(){
 });
 
 gulp.task("watch", function() {
-	gulp.watch("./app/sass/*.scss", ["sass"]);
+	gulp.watch("./app/**/*.scss", ["sass"]);
 	gulp.watch(['./node_modules/angular/angular.js', './node_modules/angular-route/angular-route.js', './app/app.js', './app/script/**/*js'], ['browserify']);
 });
 

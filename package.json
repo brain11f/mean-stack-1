@@ -24,11 +24,11 @@
   },
   "homepage": "https://github.com/brain11f/mean-stack-1#readme",
   "devDependencies": {
-    "autoprefixer-loader": "^3.1.0",
     "browserify": "^11.2.0",
     "event-stream": "^3.3.1",
     "express": "^4.13.3",
     "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
     "gulp-csslint": "^0.2.0",
     "gulp-install": "^0.6.0",
     "gulp-jshint": "^1.11.2",
