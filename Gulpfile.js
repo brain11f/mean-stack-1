@@ -7,6 +7,9 @@ var gulp = require('gulp'),
 		rename = require('gulp-rename'),
 		es = require('event-stream');
 
+var csslint = require('gulp-csslint');
+var jshint = require('gulp-jshint');
+
 ///////all the js to one min file///////////////////
 gulp.task('browserify', function() {
 	// we define our input files, which we want to have
@@ -52,4 +55,16 @@ gulp.task('run',function(){
 gulp.task("watch", function() {
 	gulp.watch("./app/sass/*.scss", ["sass"]);
 	gulp.watch(['./node_modules/angular/angular.js', './node_modules/angular-route/angular-route.js', './app/app.js', './app/script/**/*js'], ['browserify']);
+});
+
+gulp.task("css", function() {
+  gulp.src(".app/public/css/*.css")
+    .pipe(csslint())
+    .pipe(csslint.reporter());
+});
+
+gulp.task('lint', function() {
+  return gulp.src('./app/**/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
 });
