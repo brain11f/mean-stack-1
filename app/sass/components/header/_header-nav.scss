@@ -63,7 +63,16 @@ $color_alto_approx: color('primary');
 	}
 	.main-nav {
 		li {
+			ul {
+				li:hover {
+					display: block;
+					position: absolute;
+				}
+			}
+		}
+		li {
 			display: inline-block;
+			padding-right: 1em;
 			ul {
 				li {
 					display: none;
