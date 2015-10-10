@@ -1,5 +1,5 @@
 .blog-summary {
-  @include flex-box($align: center, $wrap: wrap, $direction: row, $justify: center);
+  @include flex-box($align: center, $wrap: wrap, $direction: column, $justify: center);
   margin: 1em auto;
   padding-bottom: 3em;
   border-bottom: 1px solid;
@@ -37,6 +37,7 @@
     display: inline-block;
     flex-basis: 100%;
     order: 2;
+    margin-bottom: 1em;
     @media only screen and (min-width: $break) {
       flex-basis: 50%;
       order: 4;
