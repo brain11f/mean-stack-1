@@ -20,7 +20,7 @@
 			templateUrl: "partials/form.html",
 			controller: "BlogFormCtrl as vm",
 		})
-			.when("/blogposts/:blogpost/edit", {
+			.when("/blogposts/:blogpost_id/edit", {
 			templateUrl: "partials/form.html",
 			controller: "BlogFormCtrl as vm",
 		})
