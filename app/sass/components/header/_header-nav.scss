@@ -1,7 +1,7 @@
 //colors
 $color_alto_approx: color('primary');
 
-@media screen and (max-width: 50em) { 
+@media screen and (max-width: 50em) {
 	.primary-nav-wrap {
 		ul {
 			float: right;
@@ -9,17 +9,14 @@ $color_alto_approx: color('primary');
 			padding: 0;
 			a {
 				display: block;
-				font-weight: 700;
-				font-size: 12px;
 				line-height: 32px;
 				padding: 0 15px;
-				font-family: font-family('primary', 'regular');
 			}
 			li {
 				padding: 0 1em 0 0;
 				margin: 0 1em 0 0;
 				&.current-menu-item {
-					background: $color_alto_approx;				
+					background: $color_alto_approx;
 				}
 				&:hover {
 					background-color: $color_alto_approx;
@@ -56,8 +53,8 @@ $color_alto_approx: color('primary');
 		}
 	}
 }
-	
-@media screen and (min-width: 50em) { 
+
+@media screen and (min-width: 50em) {
 	.mobile-nav {
 		display: none;
 	}
