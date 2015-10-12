@@ -1,24 +1,21 @@
-# Week Six - MEAN Stack I
+# Code Fellows Week Six Project - MEAN Stack I
+## Brian Finck, Chris Holt, & Alina To
 
-Last week we focussed on JavaScript basics. This week we're going to build up a function web application. You'll be expected to build on knowledge you've already learned (semantic HTML, Sass instead of CSS, in addition to all of the Angular work we'll be doing) and produce a "production-ready" blog for your assignment this week.
+Our team built a functional blog CRUD web application prototype with the application of MEAN Stack. The completed blog is production-ready. The user can create, read, update, and delete blog posts from the application. There are three different views: A list of all available blog posts, a detail view of a specific blog post, and a form view to add/edit a blog post.
 
-We want this assignment to feel like a 'week on the job.' And by that we mean, we will provide a completed comp and an expected outcome specification. It is up to you to deliver on this project specification.
+For the back-end, we implemented a Node Express server and MongoDB. We used Mongoose as our MongoDB object modeling tool, and Body-Parser as our JSON parsing middleware. Chrome extension Postman was used to test the server.js. A schema for a blog post was created using Mongoose.
 
-## The Comp
-
-You can download the view that you are to complete [here](https://github.com/SEA-Design-Dev/mean-stack-1/tree/master/comps). It is provided as a Photoshop format, if you do not have access to Photoshop, other applications like Pixelmator are able to open these layered files as well.
+For the front-end, we implemented Angular, Sass, and semantic HTML. We produced and tested our completed web responsive prototype, ready for desktop and mobile views, based on a provided [comp](https://github.com/SEA-Design-Dev/mean-stack-1/tree/master/comps). The production of the prototype and CRUD application used best practices in coding HTML/CSS/Sass/JavaScript.
 
 
-## The spec
+## Resources Used
 
-As a product owner, I need a functional prototype of the application. The final prototype must be visible in a desktop browser.
+1. Function from Web Design Weekly article on converting Px to Em. Wanted to limit excess dependencies when not needed, so avoided adding Bourbon and others (http://web-design-weekly.com/snippets/converts-pixels-to-ems-with-sass/)
+1. Font Family Function inspired by map-get article for map-get inception for colors by Jake Albaugh (http://codepen.io/jakealbaugh/post/using-sass-functions-to-access-complex-variable-maps)
+1. Found limitTo in Angular Docs when searching for a way to show partial text. Found concatenation idea from Nicholas Mandel (https://nicholasmandel.wordpress.com/2014/12/18/limit-characters-displayed-in-text-with-angular/);
 
-Prototype is to use best practices in coding HTML/CSS as there is the potential that some or all of the code will made it into production.
 
-Aside from images as content, all visual assets should be produced via CSS or typography. The only background image asset allowed will be the main page header.
-
-The user should be able to create, read, update, and delete blog posts from the application. There should be at least two different views - one a list of available blog posts, the other a detail view of the blog post. You do not need to worry about authentication or user management for this assignment.
-
+## From the original assignment readme.md:
 ### Requirements
 
 1. Semantically correct HTML is required as this will be the model for prod app integration
@@ -39,13 +36,8 @@ The user should be able to create, read, update, and delete blog posts from the 
 
 __DO NOT__ fence yourself in with invisible constraints. Unless it is specifically listed and/or we discussed it in lecture, there is not an expectation to meet an objective that has not been set.
 
-## The expectation
+### The expectation
 
 In this assignment, you should be able to demonstrate mastery over the basics of Angular as well as creating a simple CRUD application. We're looking for you to build on best practices that you've already learned (proper HTML and CSS) as well as incorporate the new practices discussed during the course of the week.
 
 
-## Resources Used
-
-1. Function from Web Design Weekly article on converting Px to Em. Wanted to limit excess dependencies when not needed, so avoided adding Bourbon and others (http://web-design-weekly.com/snippets/converts-pixels-to-ems-with-sass/)
-1. Font Family Function inspired by map-get article for map-get inception for colors by Jake Albaugh (http://codepen.io/jakealbaugh/post/using-sass-functions-to-access-complex-variable-maps)
-1. Found limitTo in Angular Docs when searching for a way to show partial text. Found concatenation idea from Nicholas Mandel (https://nicholasmandel.wordpress.com/2014/12/18/limit-characters-displayed-in-text-with-angular/);
