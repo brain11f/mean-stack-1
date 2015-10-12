@@ -1,6 +1,3 @@
-@import "header/header-logo";
-@import "header/header-nav";
-
 .header-container {
 	background-color: color('primary');
 	@include flex-box($align: center, $wrap: wrap, $direction: row, $justify: space-between);
