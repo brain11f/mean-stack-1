@@ -33,6 +33,7 @@ gulp.task('browserify', function() {
 	return es.merge.apply(null, tasks);
 });
 
+//////// sass //////////////
 var csspaths = {
 	scss: './app/**/*.scss'
 };
@@ -52,22 +53,30 @@ gulp.task('sass', function () {
 		.pipe(gulp.dest('./app/public/css'));
 });
 
+
+/////// run js and sass ///////////
 gulp.task('run',function(){
 	gulp.start('sass');
 	gulp.start('browserify');
 });
 
-gulp.task("watch", function() {
+/////// watch js and sass //////////
+gulp.task('watch', function() {
 	gulp.watch("./app/**/*.scss", ["sass"]);
 	gulp.watch(['./node_modules/angular/angular.js', './node_modules/angular-route/angular-route.js', './app/app.js', './app/script/**/*js'], ['browserify']);
 });
 
+//////// server js and sass /////////
+gulp.task('serve', ['run', 'watch']);
+
+////////// css lint //////////
 gulp.task("css", function() {
   gulp.src(".app/public/css/*.css")
     .pipe(csslint())
     .pipe(csslint.reporter());
 });
 
+//////// js lint //////////////
 gulp.task('lint', function() {
   return gulp.src('./app/**/*.js')
     .pipe(jshint())

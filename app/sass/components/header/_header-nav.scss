@@ -60,11 +60,9 @@ $color_alto_approx: color('primary');
 	}
 	.main-nav {
 		li {
-			ul {
-				li:hover {
-					display: block;
-					position: absolute;
-				}
+			ul:hover {
+				display: block;
+				position: absolute;
 			}
 		}
 		li {
