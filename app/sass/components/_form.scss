@@ -15,6 +15,8 @@ form {
     width: 20em;
     height: 10em;
     display: block;
+    font-family: font-family('primary', 'light');
+    font-size: font-size('small');
     @media screen and (min-width: 50em) {
       width: 40em;
       height: 15em;
@@ -23,7 +25,7 @@ form {
       &:focus {
         outline-color: color('accent');
         outline-style: solid;
-        outline-width: .5em;
+        outline-width: .25em;
       }
     }
   }
@@ -32,13 +34,15 @@ form {
     width: 20em;
     display: block;
     margin: 1em auto;
+    font-family: font-family('primary', 'light');
+    font-size: font-size('small');
     @media screen and (min-width: 50em) {
       border: .1em solid #ddd;
       border-radius: em(4);
       &:focus {
         outline-color: color('accent');
         outline-style: solid;
-        outline-width: .5em;
+        outline-width: .25em;
       }
     }
   }
