@@ -61,10 +61,13 @@ gulp.task('run',function(){
 });
 
 /////// watch js and sass //////////
-gulp.task("watch", function() {
+gulp.task('watch', function() {
 	gulp.watch("./app/**/*.scss", ["sass"]);
 	gulp.watch(['./node_modules/angular/angular.js', './node_modules/angular-route/angular-route.js', './app/app.js', './app/script/**/*js'], ['browserify']);
 });
+
+//////// server js and sass /////////
+gulp.task('serve', ['run', 'watch']);
 
 ////////// css lint //////////
 gulp.task("css", function() {
