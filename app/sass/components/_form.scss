@@ -18,6 +18,13 @@ form {
     @media screen and (min-width: 50em) {
       width: 40em;
       height: 15em;
+      border: .1em solid #ddd;
+      border-radius: em(4);
+      &:focus {
+        outline-color: color('accent');
+        outline-style: solid;
+        outline-width: .5em;
+      }
     }
   }
   input {
@@ -26,18 +33,25 @@ form {
     display: block;
     margin: 1em auto;
     @media screen and (min-width: 50em) {
+      border: .1em solid #ddd;
+      border-radius: em(4);
+      &:focus {
+        outline-color: color('accent');
+        outline-style: solid;
+        outline-width: .5em;
+      }
     }
   }
-  input[type="submit"] {
-    border: none;
-    padding: 1em;
-    width: 20em;
-    display: block;
-    margin: 1em auto;
-    color: color($key: 'base');
-    &:hover {
-      background-color: color($key: 'accent');
-      cursor: pointer;
-    }
-  }
+  // input[type="submit"] {
+  //   border: none;
+  //   padding: 1em;
+  //   width: 20em;
+  //   display: block;
+  //   margin: 1em auto;
+  //   color: color($key: 'base');
+  //   &:hover {
+  //     background-color: color($key: 'accent');
+  //     cursor: pointer;
+  //   }
+  // }
 }

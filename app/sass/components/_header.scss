@@ -15,6 +15,9 @@
     color: color('base');
     font-family: font-family('primary', 'regular');
     font-size: font-size('x-small');
+    &:hover {
+      color: color('accent');
+    }
   }
 }
 

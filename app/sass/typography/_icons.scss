@@ -19,27 +19,10 @@ $iconPrimary:
   .icon-#{nth($iconP, 1)} {
     @extend %icon-font-base;
     font-size: #{nth($iconP, 2)};
-    color: #000;
+    color: #1e1d24;
     width: 100%;
     &:before {
       content: nth($iconP, 3);
     }
   }
 }
-
-// Icon Styles included below:
-// .icon-pinterest:before {
-//   content: "\e800";
-// }
-// .icon-google:before {
-//   content: "\e801";
-// }
-// .icon-twitter:before {
-//   content: "\e802";
-// }
-// .icon-facebook:before {
-//   content: "\e803";
-// }
-// .icon-linkedin:before {
-//   content: "\e804";
-// }
