@@ -1,7 +1,29 @@
+<!-- Blog Main SECTION -->
+<section class="page-banner">
+  <h1>Blog</h1>
+</section>
+<!-- MINI NAV  -->
+<div class="sub-nav-wrapper">
+  <nav class="sub-nav">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#/blogposts/">BLOG</a></li>
+      <li>{{vm.blogpost.title}}</li>
+    </ul>
+  </nav>
+  <div class="share-social-icons">
+    <p>Share</p>
+    <ul>
+      <li><a class="icon-twitter" href="#"></a></li>
+      <li><a class="icon-facebook" href="#"></a></li>
+      <li><a class="icon-google" href="#"></a></li>
+      <li><a class="icon-pinterest" href="#"></a></li>
+    </ul>
+  </div>
+</div>
 <section class="blog-container">
 <!--   <h1>Single Blogpost!</h1> -->
   <article ng-controller="BlogpostCtrl" class="blog-summary">
-		<!-- <blogpost-details blogpost="vm.player"></blogpost-details> -->
     <h1>{{ vm.blogpost.title }}</h1>
     <p> {{ vm.blogpost.text }}</p>
     <ul class="blog-metadata">
