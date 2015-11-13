@@ -7,6 +7,7 @@ For the back-end, we implemented a Node Express server and MongoDB. We used Mong
 
 For the front-end, we implemented Angular, Sass, and semantic HTML. We produced and tested our completed web responsive prototype, ready for desktop and mobile views, based on a provided [comp](https://github.com/SEA-Design-Dev/mean-stack-1/tree/master/comps). The production of the prototype and CRUD application used best practices in coding HTML/CSS/Sass/JavaScript.
 
+Live demo [here](https://nameless-waters-2769.herokuapp.com/)
 
 ## Resources Used
 
